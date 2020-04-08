@@ -7,7 +7,7 @@ const serverConfig = {
     module: {
         rules: [
             {
-                test: /\.tsx?$/,
+                test: /\.(jsx|tsx?)$/,
                 loader: 'ts-loader',
                 exclude: /node_modules/,
                 options: {
@@ -17,7 +17,7 @@ const serverConfig = {
         ]
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js']
+        extensions: ['.tsx', '.ts', '.js', 'jsx']
     },
     output: {
         filename: 'server.js',
