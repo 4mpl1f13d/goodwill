@@ -7,7 +7,7 @@ const serverConfig = {
     module: {
         rules: [
             {
-                test: /\.(jsx|tsx?)$/,
+                test: /\.tsx?$/,
                 loader: 'ts-loader',
                 exclude: /node_modules/,
                 options: {
@@ -17,7 +17,7 @@ const serverConfig = {
         ]
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js', 'jsx']
+        extensions: ['.tsx', '.ts', '.js']
     },
     output: {
         filename: 'server.js',
@@ -37,7 +37,7 @@ const clientConfig = {
     module: {
       rules: [
         {
-            test: /\.tsx?$/,
+            test: /\.(jsx|tsx?)$/,
             loader: 'ts-loader',
             exclude: /node_modules/,
             options: {
@@ -55,7 +55,7 @@ const clientConfig = {
       ]
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js', '.css', '.scss']
+        extensions: ['.tsx', '.jsx', '.ts', '.js', '.css', '.scss']
     },
     output: {
         filename: 'app.js',
