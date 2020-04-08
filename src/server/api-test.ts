@@ -25,4 +25,4 @@ let ebaySearchCompletedURL: string =
     itemFilter(1).value=true&
     itemFilter(2).name=SoldItemsOnly&
     itemFilter(2).value=true&
-    paginationInput.entriesPerPage=10`;
+    paginationInput.entriesPerPage=4`;
