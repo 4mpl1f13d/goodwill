@@ -1,0 +1,673 @@
+{
+    "findCompletedItemsResponse": [
+        {
+            "ack": [
+                "Success"
+            ],
+            "version": [
+                "1.13.0"
+            ],
+            "timestamp": [
+                "2020-04-10T16:29:53.954Z"
+            ],
+            "searchResult": [
+                {
+                    "@count": "5",
+                    "item": [
+                        {
+                            "itemId": [
+                                "352927377003"
+                            ],
+                            "title": [
+                                "Nike Kobe 6s Grinch Christmas Size 4Y Lime Green Red Basketball Shoes"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/thumbs4.ebaystatic.com\/m\/mNX6i3rRaJtw8pkysvDIw0w\/140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/Nike-Kobe-6s-Grinch-Christmas-Size-4Y-Lime-Green-Red-Basketball-Shoes-\/352927377003"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "postalCode": [
+                                "913**"
+                            ],
+                            "location": [
+                                "Northridge,CA,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "true"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "3"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "10000.0"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "10000.0"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "EndedWithSales"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "true"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2020-01-10T03:15:46.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2020-02-02T04:04:08.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "14"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "3000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Pre-owned"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "352964440485"
+                            ],
+                            "title": [
+                                "Nike Kobe 6s Grinch Christmas Size 4Y Lime Green Red Basketball Shoes"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/thumbs2.ebaystatic.com\/m\/mNX6i3rRaJtw8pkysvDIw0w\/140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/Nike-Kobe-6s-Grinch-Christmas-Size-4Y-Lime-Green-Red-Basketball-Shoes-\/352964440485"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "postalCode": [
+                                "913**"
+                            ],
+                            "location": [
+                                "Northridge,CA,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "true"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "3"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "10000.0"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "10000.0"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "EndedWithSales"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2020-02-08T00:16:09.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2020-02-08T01:35:41.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "1"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "3000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Pre-owned"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "133347523317"
+                            ],
+                            "title": [
+                                "NIKE AIR YEEZY 2 \u201cRed October\u201d Mens Shoes Size 11"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/thumbs2.ebaystatic.com\/m\/mko6Gr0RxndGfxn6XGjNL_Q\/140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/NIKE-AIR-YEEZY-2-Red-October-Mens-Shoes-Size-11-\/133347523317"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "postalCode": [
+                                "100**"
+                            ],
+                            "location": [
+                                "New York,NY,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingType": [
+                                        "Calculated"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "true"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "2"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "5500.0"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "5500.0"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "EndedWithSales"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "true"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2020-02-29T03:46:01.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2020-03-01T00:25:08.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "1"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "3000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Pre-owned"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "124062737630"
+                            ],
+                            "title": [
+                                "Nike Kobe VI 6 Grinch Christmas Lime Green Shoe 429659-701 Mens Size 8.5"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/thumbs3.ebaystatic.com\/m\/mDHyUoiyeJXz4eq7JPuYy7A\/140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/Nike-Kobe-VI-6-Grinch-Christmas-Lime-Green-Shoe-429659-701-Mens-Size-8-5-\/124062737630"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "postalCode": [
+                                "935**"
+                            ],
+                            "location": [
+                                "Palmdale,CA,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingType": [
+                                        "Calculated"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "true"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "1"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "5000.0"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "5000.0"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "EndedWithSales"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2020-01-27T18:34:34.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2020-01-27T18:43:15.000Z"
+                                    ],
+                                    "listingType": [
+                                        "StoreInventory"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "3000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Pre-owned"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "topRatedListing": [
+                                "true"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "174175181875"
+                            ],
+                            "title": [
+                                "Kobe Bryant Game Worn Used Shoes Nike Promo 2010 Mens Size 14 Del Sol Mamba "
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "15709"
+                                    ],
+                                    "categoryName": [
+                                        "Athletic Shoes"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/thumbs4.ebaystatic.com\/m\/mjxXNMy-gXKHDO8OyUDZRdw\/140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/Kobe-Bryant-Game-Worn-Used-Shoes-Nike-Promo-2010-Mens-Size-14-Del-Sol-Mamba-\/174175181875"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "postalCode": [
+                                "906**"
+                            ],
+                            "location": [
+                                "Pico Rivera,CA,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "true"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "1"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "5000.0"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "5000.0"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "EndedWithSales"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "true"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2020-01-30T03:30:13.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2020-02-20T03:14:20.000Z"
+                                    ],
+                                    "listingType": [
+                                        "StoreInventory"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "16"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "false"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "3000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Pre-owned"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "paginationOutput": [
+                {
+                    "pageNumber": [
+                        "1"
+                    ],
+                    "entriesPerPage": [
+                        "5"
+                    ],
+                    "totalPages": [
+                        "16571"
+                    ],
+                    "totalEntries": [
+                        "82853"
+                    ]
+                }
+            ]
+        }
+    ]
+}
