@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 // import "../../../public/assets/css/main.css";
 
-
 class NavBar extends Component {
   constructor(props) {
     super(props);
@@ -9,14 +8,7 @@ class NavBar extends Component {
   }
   render() {
     return (
-    
       <div id="header">
-      <title>Donater</title>
-      <meta charSet="utf-8" />
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, user-scalable=no"
-      />
         <div className="top">
           {/* Logo */}
           <div id="logo">
@@ -28,17 +20,24 @@ class NavBar extends Component {
             <ul>
               <li>
                 <a href="#top" id="top-link">
-                  <span className="icon solid fa-home">Search</span>
+                  <span className="icon solid fa-search">Search</span>
+                </a>
+              </li>
+              <li>
+                <a href="#top-2" id="top-link-2">
+                  <span className="icon solid fa-calculator">Calculate</span>
                 </a>
               </li>
               <li>
                 <a href="#portfolio" id="portfolio-link">
-                  <span className="icon solid fa-th">Details</span>
+                  <span className="icon solid fal fa-list-alt">Details</span>
                 </a>
               </li>
               <li>
                 <a href="#about" id="about-link">
-                  <span className="icon solid fa-user">Pick Loction</span>
+                  <span className="icon solid fa-map-marker-alt">
+                    Pick Loction
+                  </span>
                 </a>
               </li>
               <li>

@@ -7,6 +7,11 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* added */
+.red{
+  color: rgb(231, 74, 74);
+}
+
 html,
 body,
 div,
@@ -338,31 +343,36 @@ br.clear {
 
 @media screen and (min-width: 961px) and (max-width: 1880px) {
   .container {
-    width: 1200px;
+		width: 1200px;
+		
   }
 }
 
 @media screen and (min-width: 961px) and (max-width: 1620px) {
   .container {
-    width: 960px;
+		width: 960px;
+		
   }
 }
 
 @media screen and (min-width: 961px) and (max-width: 1320px) {
   .container {
-    width: 100%;
+		width: 100%;
+		
   }
 }
 
 @media screen and (max-width: 960px) {
   .container {
-    width: 100%;
+		width: 100%;
+		
   }
 }
 
 @media screen and (max-width: 736px) {
   .container {
-    width: 100%;
+		width: 100%;
+		
   }
 }
 
@@ -1839,7 +1849,8 @@ section:last-child,
 article > :last-child,
 article > .container,
 article:last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
+	
 }
 
 .row > section,
@@ -2087,7 +2098,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-  background-color: #9ececc;
+  background-color: #e47d7d;
 }
 
 input[type="button"]:active,
@@ -2298,7 +2309,7 @@ button:active,
 #footer {
   margin-left: 375px;
   text-align: center;
-  background-color:#4696e5;
+  background-color: #4696e5;
   padding: 3em 0 4em 0;
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05),
     inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
@@ -2448,7 +2459,8 @@ button:active,
   }
 
   .container {
-    padding: 0 2em 0 2em;
+		padding: 0 2em 0 2em;
+		
   }
 
   /* Icons */
@@ -2529,7 +2541,8 @@ button:active,
   }
 
   .container {
-    padding: 0 2em 0 2em;
+		padding: 0 2em 0 2em;
+		
   }
 
   /* Item */
@@ -2723,7 +2736,8 @@ button:active,
   }
 
   .container {
-    padding: 0 15px 0 15px;
+		padding: 0 15px 0 15px;
+		
   }
 
   /* List */
