@@ -1,3 +1,8 @@
+## back end
+### ebay
+ebay search API is done via REST (get/fetch). complete payload delivered via URI. see: src/server/services/ebayFoo.ts
+credentials stored in separate config directory (not pushed to git).
+
 # Barebones React/TypeScript/Express/Sass Boilerplate
 This project is a starting point for a TypeScript based React app that also has a local API server using express.
 
