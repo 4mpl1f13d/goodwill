@@ -1,0 +1,685 @@
+{
+    "findCompletedItemsResponse": [
+        {
+            "ack": [
+                "Success"
+            ],
+            "version": [
+                "1.13.0"
+            ],
+            "timestamp": [
+                "2020-04-14T16:33:22.478Z"
+            ],
+            "searchResult": [
+                {
+                    "@count": "5",
+                    "item": [
+                        {
+                            "itemId": [
+                                "114108827361"
+                            ],
+                            "title": [
+                                "HP DV7-6B55DX i5 2430M 2.40GHz 8 GB 750GB 17.3\" Laptop. Needs New Battery."
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "177"
+                                    ],
+                                    "categoryName": [
+                                        "PC Laptops & Netbooks"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/thumbs2.ebaystatic.com\/m\/mdynTPmeixZC3K09ywiaDdQ\/140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/HP-DV7-6B55DX-i5-2430M-2-40GHz-8-GB-750GB-17-3-Laptop-Needs-New-Battery-\/114108827361"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "autoPay": [
+                                "true"
+                            ],
+                            "postalCode": [
+                                "783**"
+                            ],
+                            "location": [
+                                "Falfurrias,TX,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "0.0"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Free"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "2"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "99.99"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "99.99"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "EndedWithSales"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "true"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2020-02-11T04:41:28.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2020-02-13T03:58:52.000Z"
+                                    ],
+                                    "listingType": [
+                                        "FixedPrice"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "2"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "3000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Used"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "293500662703"
+                            ],
+                            "title": [
+                                "HP Pavilion DV7-6B55DX Core i5 2430M 2.40GHz 8GB 500GB 17.3\"Win10 w\/Charger Read"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "177"
+                                    ],
+                                    "categoryName": [
+                                        "PC Laptops & Netbooks"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/thumbs4.ebaystatic.com\/m\/m37HZUvnmn6Wyy0r6dtKu6A\/140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/HP-Pavilion-DV7-6B55DX-Core-i5-2430M-2-40GHz-8GB-500GB-17-3-Win10-w-Charger-Read-\/293500662703"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "postalCode": [
+                                "210**"
+                            ],
+                            "location": [
+                                "Columbia,MD,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "19.99"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Flat"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "1"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "99.99"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "99.99"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "EndedWithSales"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2020-03-04T20:29:15.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2020-03-05T21:19:17.000Z"
+                                    ],
+                                    "listingType": [
+                                        "StoreInventory"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "3000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Used"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "293506991922"
+                            ],
+                            "title": [
+                                "HP Pavilion DV7-6B55DX Core i5-2430M 2.40GHz 8GB 640GB 17.3\"Win10 w\/Charger Read"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "177"
+                                    ],
+                                    "categoryName": [
+                                        "PC Laptops & Netbooks"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/thumbs3.ebaystatic.com\/m\/mjggLQIqzISLhBbwthyePVw\/140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/HP-Pavilion-DV7-6B55DX-Core-i5-2430M-2-40GHz-8GB-640GB-17-3-Win10-w-Charger-Read-\/293506991922"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "postalCode": [
+                                "210**"
+                            ],
+                            "location": [
+                                "Columbia,MD,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "19.99"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Flat"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "1"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "94.99"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "94.99"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "EndedWithSales"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2020-03-11T11:06:37.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2020-03-17T22:24:34.000Z"
+                                    ],
+                                    "listingType": [
+                                        "StoreInventory"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "3"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "3000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Used"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "293404906110"
+                            ],
+                            "title": [
+                                "HP Pavilion DV7-6b55dx i5 2430M 2.40 GHz 4 GB RAM NO HDD 17.3\" *Bad battery*Read"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "177"
+                                    ],
+                                    "categoryName": [
+                                        "PC Laptops & Netbooks"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/thumbs3.ebaystatic.com\/m\/mUtJ51mTeg2cYzMyj1KKIyQ\/140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/HP-Pavilion-DV7-6b55dx-i5-2430M-2-40-GHz-4-GB-RAM-NO-HDD-17-3-Bad-battery-Read-\/293404906110"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "postalCode": [
+                                "210**"
+                            ],
+                            "location": [
+                                "Columbia,MD,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "19.99"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Flat"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "1"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "65.99"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "65.99"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "EndedWithSales"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2020-01-02T14:06:05.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2020-01-22T00:16:45.000Z"
+                                    ],
+                                    "listingType": [
+                                        "StoreInventory"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "8"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "3000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Used"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        },
+                        {
+                            "itemId": [
+                                "293453445856"
+                            ],
+                            "title": [
+                                "HP DV7-6B55DX i5 2430M 2.40 GHz 4GB RAM NO HDD 17.3\" No Battery HD Graphics READ"
+                            ],
+                            "globalId": [
+                                "EBAY-US"
+                            ],
+                            "primaryCategory": [
+                                {
+                                    "categoryId": [
+                                        "177"
+                                    ],
+                                    "categoryName": [
+                                        "PC Laptops & Netbooks"
+                                    ]
+                                }
+                            ],
+                            "galleryURL": [
+                                "https:\/\/thumbs1.ebaystatic.com\/m\/mJbjPPdCelHJMdpYVxZlm0Q\/140.jpg"
+                            ],
+                            "viewItemURL": [
+                                "https:\/\/www.ebay.com\/itm\/HP-DV7-6B55DX-i5-2430M-2-40-GHz-4GB-RAM-NO-HDD-17-3-No-Battery-HD-Graphics-READ-\/293453445856"
+                            ],
+                            "paymentMethod": [
+                                "PayPal"
+                            ],
+                            "autoPay": [
+                                "false"
+                            ],
+                            "postalCode": [
+                                "210**"
+                            ],
+                            "location": [
+                                "Columbia,MD,USA"
+                            ],
+                            "country": [
+                                "US"
+                            ],
+                            "shippingInfo": [
+                                {
+                                    "shippingServiceCost": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "19.99"
+                                        }
+                                    ],
+                                    "shippingType": [
+                                        "Flat"
+                                    ],
+                                    "shipToLocations": [
+                                        "Worldwide"
+                                    ],
+                                    "expeditedShipping": [
+                                        "false"
+                                    ],
+                                    "oneDayShippingAvailable": [
+                                        "false"
+                                    ],
+                                    "handlingTime": [
+                                        "1"
+                                    ]
+                                }
+                            ],
+                            "sellingStatus": [
+                                {
+                                    "currentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "65.99"
+                                        }
+                                    ],
+                                    "convertedCurrentPrice": [
+                                        {
+                                            "@currencyId": "USD",
+                                            "__value__": "65.99"
+                                        }
+                                    ],
+                                    "sellingState": [
+                                        "EndedWithSales"
+                                    ]
+                                }
+                            ],
+                            "listingInfo": [
+                                {
+                                    "bestOfferEnabled": [
+                                        "false"
+                                    ],
+                                    "buyItNowAvailable": [
+                                        "false"
+                                    ],
+                                    "startTime": [
+                                        "2020-01-31T15:06:13.000Z"
+                                    ],
+                                    "endTime": [
+                                        "2020-02-15T07:55:27.000Z"
+                                    ],
+                                    "listingType": [
+                                        "StoreInventory"
+                                    ],
+                                    "gift": [
+                                        "false"
+                                    ],
+                                    "watchCount": [
+                                        "3"
+                                    ]
+                                }
+                            ],
+                            "returnsAccepted": [
+                                "true"
+                            ],
+                            "condition": [
+                                {
+                                    "conditionId": [
+                                        "3000"
+                                    ],
+                                    "conditionDisplayName": [
+                                        "Used"
+                                    ]
+                                }
+                            ],
+                            "isMultiVariationListing": [
+                                "false"
+                            ],
+                            "topRatedListing": [
+                                "false"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "paginationOutput": [
+                {
+                    "pageNumber": [
+                        "1"
+                    ],
+                    "entriesPerPage": [
+                        "5"
+                    ],
+                    "totalPages": [
+                        "2"
+                    ],
+                    "totalEntries": [
+                        "6"
+                    ]
+                }
+            ]
+        }
+    ]
+}

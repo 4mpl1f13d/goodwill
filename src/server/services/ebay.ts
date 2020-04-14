@@ -1,11 +1,24 @@
 // to do:
-// X name variable ebayFoo
-// X store credentials in separate file, import, .gitignore exclude.
 // - export data into json.
 
-// import 'isomorphic-fetch';
-// import 'es6-promise';
+import fetch from 'node-fetch';
+
+import fs = require('fs');
 import credentials from '../config/credentials';
+import { response } from 'express';
+
+const search = () => {
+    fetch(fullURL)
+        .then(res => res.text())
+        .then(body => write(body))
+        .catch(err => console.log(err));
+}
+
+const write = (body) => {
+    for (let i = 0; i < 1; i++) {
+        fs.writeFile('ebay.json', body, () => { return });
+    }
+}
 
 // convert json to array of objects.
 // const results = Object.keys(data).map(key => {
@@ -44,8 +57,9 @@ const
     fullURL: string = baseURL + headers + fullPayload
     ;
 
-// fetch(fullURL);
+
 
 export default {
     fullURL,
+    search,
 }
