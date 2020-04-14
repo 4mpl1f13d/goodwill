@@ -38,7 +38,7 @@ class NavBar extends Component {
               </li>
               <li>
                 <a href="#about" id="about-link">
-                  <span className="icon solid fa-user">Pick Loction</span>
+                  <span className="icon solid fa-user">Pick Location</span>
                 </a>
               </li>
               <li>
