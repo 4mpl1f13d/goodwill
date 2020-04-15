@@ -32,7 +32,7 @@ const
     // base url (points to ZENSERP get)
     baseURL: string = "https://app.zenserp.com/api/v2/search?",
     // the api call.
-    gApi: string = "apikey=e0131b60-7857-11ea-a5bb-c5c7e12128c5",
+    gApi: string = "apikey=",
     // keywords (search terms).
     keywords: string = "&q=Thrift%20Store%20",
     // DB zip code call needed to poplulate varibale successfully
