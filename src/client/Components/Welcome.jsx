@@ -3,8 +3,9 @@ import React, { Component } from "react";
 class Welcome extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
-  }
+      this.state= {}
+    };
+
   render() {
     return (
       <section id="top" className="one dark cover">
@@ -17,18 +18,22 @@ class Welcome extends Component {
             <form method="post" action="#">
               <div className="row">
                 <div className="col-4 col-12-mobile">
-                  <input type="text" name="Make" placeholder="Make" />
+                  <input type="text" name="Make" id='makeField' placeholder="Make"
+                      onChange={(event)=> this.props.handleMakeInput(event)}
+                  />
                 </div>
               </div>
               <div className="row">
                 <div className="col-4 col-12-mobile">
-                  <input type="text" name="model" placeholder="model" />
+                  <input type="text" name="model" id='modelField' placeholder="model"
+                      onChange={(event)=> this.props.handleModelInput(event)}
+                  />
                 </div>
               </div>
 
               <div className="row">
                 <div className="col-4 col-12-mobile">
-                  <select className="" name="condition" id="condition">
+                  <select className="" name="condition" id="condition" onChange={(event)=> this.props.handleConditionInput(event)}>
                     <option selected="selected">Condition</option>
                     <option id="condition-broke" value="broke">
                       broke
@@ -44,13 +49,14 @@ class Welcome extends Component {
               </div>
 
               <div className="col-12">
-                <a id="search-btn" href="#top-2" className="button scrolly">
+                <a id="search-btn" href="#top-2" className="button scrolly" onClick={() => this.props.handleClick()} >
                   <span className="fas fa-search"></span> Search
                 </a>
               </div>
             </form>
           </footer>
         </div>
+        
       </section>
     );
   }
