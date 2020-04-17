@@ -4,6 +4,7 @@ class Welcome extends Component {
   constructor(props) {
     super(props);
       this.state= {}
+      //NOTE: Did not need to list any states because the proper states are already passed into the component as props from the Home Page/Component
     };
 
   render() {
