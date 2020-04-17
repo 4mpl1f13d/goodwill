@@ -34,10 +34,7 @@
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.12.0",
     "react-horizontal-scrolling-menu": "^0.7.7",
-<<<<<<< HEAD
     "react-router": "^5.1.2",
-=======
->>>>>>> a63ca4dc337d109b81c6562eb60bafe44e95343a
     "react-router-dom": "^5.1.2",
     "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1",
