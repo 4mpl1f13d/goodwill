@@ -6,6 +6,7 @@ import Location from "./Location";
 import CheckOut from "./CheckOut";
 import Footer from "./Footer";
 import NameZip from "./NameZip";
+import Kamesha from "./Kamesha";
 
 class Home extends Component {
   constructor(props) {
@@ -33,7 +34,8 @@ class Home extends Component {
           {/* Pickup Loaction */}
           <Location />
           {/* Check Out (PRINT) */}
-          <CheckOut />
+         {/* <CheckOut />*/}
+          <Kamesha />
         </div>
         {/* Footer */}
         <Footer />
