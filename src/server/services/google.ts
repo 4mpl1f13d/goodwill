@@ -54,6 +54,17 @@ const
     ;
 
 
+//    //rest api to create a new customer record into mysql database
+//     app.post('/customer', function (req, res) {
+//        var params  = req.body;
+//        console.log(params);
+//        connection.query('INSERT INTO customer SET ?', params, function (error, results, fields) {
+//           if (error) throw error;
+//           res.end(JSON.stringify(results));
+//         });
+//     });
+
+
 export default {
     fullG_URL,
     search,
