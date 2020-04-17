@@ -11,8 +11,65 @@ import Kamesha from "./Kamesha";
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      itemStats: [
+        {
+          make: 'Sony Xperia',
+          model: 'l3123',
+          condition: 'Used',
+          appraisal: 300,
+        },
+        {
+          make: 'Fire 10',
+          model: 'UX347',
+          condition: 'New',
+          appraisal: 150,
+        },
+        {
+          make: 'Fire 7',
+          model: 'UM926',
+          condition: 'Used',
+          appraisal: 25,
+        },
+
+      ],
+
+      newMake: '',
+      newModel: '',
+      newCondition: '',
+      // newAppraisal: Number
+    }
+
+    this.handleClick = this.handleClick.bind(this);
+    this.handleMakeInput = this.handleMakeInput.bind(this);
+    this.handleModelInput = this.handleModelInput.bind(this);
+    this.handleConditionInput = this.handleConditionInput.bind(this);
   }
+
+  handleClick() {
+    const newStats = {
+      make: this.state.newMake,
+      model: this.state.newModel,
+      condition: this.state.newCondition,
+      // appraisal: this.state.newAppraisal
+    };
+    this.setState({ itemStats: [...this.state.itemStats, newStats] }, () => {
+      console.log(this.state.itemStats);
+    });
+  }
+
+  handleMakeInput(e) {
+    this.setState({ newMake: e.target.value });
+  }
+
+  handleModelInput(e) {
+    this.setState({ newModel: e.target.value });
+  }
+
+  handleConditionInput(e) {
+    this.setState({ newCondition: e.target.value });
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -26,11 +83,11 @@ class Home extends Component {
         <NavBar />
         <div id="main">
           {/*Welcome(search)*/}
-          <Welcome />
+          <Welcome handleConditionInput={this.handleConditionInput} handleMakeInput={this.handleMakeInput} handleModelInput={this.handleModelInput} handleClick={this.handleClick} newMake={this.state.newMake} newModel={this.state.newModel} newCondition={this.state.newCondition} itemStats={this.state.itemStats} />
           {/*name and zip input*/}
           <NameZip />
           {/* Details */}
-          <Details />
+          <Details itemStats={this.state.itemStats} />
           {/* Pickup Loaction */}
           <Location />
           {/* Check Out (PRINT) */}
