@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './Components/Home';
+import CheckOut from './Components/CheckOut';
 
 class App extends React.Component<IAppProps, IAppState> {
 	constructor(props: IAppProps) {
@@ -26,6 +27,7 @@ class App extends React.Component<IAppProps, IAppState> {
 			<Router>
 				<Switch>
 					<Route exact path="/" component={Home} />
+					<Route exact path="/checkout" component={CheckOut} />
 				</Switch>
 			</Router>
 		);
