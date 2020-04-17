@@ -4,14 +4,16 @@
 import fetch from 'node-fetch';
 
 import fs = require('fs');
-// import credentials from '../config/credentials';
+import credentials from '../config/credentials';
 import { response } from 'express';
 
 const search = () => {
-    fetch(fullG_URL)
-        .then(res => res.text())
-        .then(body => write(body))
-        .catch(err => console.log(err));
+    console.log(credentials.googleKey);
+    
+    // fetch(fullG_URL)
+    //     .then(res => res.text())
+    //     .then(body => write(body))
+    //     .catch(err => console.log(err));
 }
 
 const write = (body) => {
@@ -32,11 +34,11 @@ const
     // base url (points to ZENSERP get)
     baseURL: string = "https://app.zenserp.com/api/v2/search?",
     // the api call.
-    gApi: string = "apikey=",
+    gApi: string = "apikey=" + credentials.googleKey,
     // keywords (search terms).
     keywords: string = "&q=Thrift%20Store%20",
     // DB zip code call needed to poplulate varibale successfully
-    gZip: string = "36303",
+    gZip: string = "35222",
     //directions URL    
     // dirURL: string = "&directions=",
     //Address from directions from GMAPS SERP
