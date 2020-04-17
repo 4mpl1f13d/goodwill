@@ -8,12 +8,13 @@ import credentials from '../config/credentials';
 import { response } from 'express';
 
 const search = () => {
-    console.log(credentials.googleKey);
+    // Testing creds for google and FS
+    // console.log(credentials.googleKey);
     
-    // fetch(fullG_URL)
-    //     .then(res => res.text())
-    //     .then(body => write(body))
-    //     .catch(err => console.log(err));
+    fetch(fullG_URL)
+        .then(res => res.text())
+        .then(body => write(body))
+        .catch(err => console.log(err));
 }
 
 const write = (body) => {
