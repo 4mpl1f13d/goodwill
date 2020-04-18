@@ -1,25 +1,60 @@
-// to do:
-// - export data into json.
 
 import fetch from 'node-fetch';
-
-import fs = require('fs');
+import * as mysql from "mysql";
+// import fs = require('fs');
+import UID from './uid';
 import credentials from '../config/credentials';
 import { response } from 'express';
+const fs = require('fs');
+const ebayUID = UID;
 
-const search = () => {
-    fetch(fullURL)
-        .then(res => res.text())
-        .then(body => write(body))
+// Test Write data to ebay.JSON
+// const search = () => {
+//     fetch(fullURL)
+//         .then(res => res.text())
+//         .then(body => write(body))
+//         .catch(err => console.log(err));
+// }
+
+// const write = (body) => {
+//     for (let i = 0; i < 1; i++) {
+//         fs.writeFile('ebay.json', body, () => { return });
+//     }
+// }
+
+
+// MySQL Connection
+var connection = mysql.createConnection({
+    host: 'localhost',
+    user: credentials.mysql.user,
+    password: credentials.mysql.password,
+    database: credentials.mysql.database
+});
+
+// import rest api data to create a new google records into mysql database - Update ebayfoos table
+export const searchEbay = () => {
+    // Testing creds for google and FS
+    // console.log(credentials.googleKey);
+
+    fetch(fullE_URL)
+        .then(res => res.json())
+        .then(body => {
+            // console.log(body);
+
+            console.log(body.findCompletedItemsResponse.ack);
+            
+            // body.findCompletedItemsResponse.searchResult.item.forEach(element => {
+            //     // DB info on top, JSON table info on bottom
+            //     connection.query(`insert into ebayfoos(searchid, keywords, grade, marketvalue, galleryURL) values
+            //     (?, ?, ?, ?, ?)`, [ebayUID, keywords, element.condition.conditionId, element.sellingStatus.convertedCurrentPrice.__value__, element.galleryURL], function (error, results, fields) {
+            //         if (error) throw error;
+            //     });
+            // });
+        })
         .catch(err => console.log(err));
 }
 
-const write = (body) => {
-    for (let i = 0; i < 1; i++) {
-        fs.writeFile('ebay.json', body, () => { return });
-    }
-}
-
+// TESTING
 // convert json to array of objects.
 // const results = Object.keys(data).map(key => {
 //     return {
@@ -27,7 +62,7 @@ const write = (body) => {
 //     }
 // });
 
-const
+export const
     // hard-coded condition.
     condition: number = 3000,
     // base url (points to ebay get).
@@ -51,15 +86,14 @@ const
     pagination: string = "paginationInput" + ".entriesPerPage=" + "5" + "&",
     // how to sort.
     sortOrder: string = "sortOrder=" + "CurrentPriceHighest",
-    // concatentation.
+    // concatenation.
     headers: string = opName + serVers + appName + dataFormat,
     fullPayload = payload + keywords + itemFilter0 + itemFilter1 + pagination + sortOrder,
-    fullURL: string = baseURL + headers + fullPayload
-    ;
+    fullE_URL: string = baseURL + headers + fullPayload;
 
 
 
-export default {
-    fullURL,
-    search,
-}
+// export default {
+//     fullE_URL,
+//     search,
+// }
