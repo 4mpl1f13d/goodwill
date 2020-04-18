@@ -15,7 +15,7 @@
       "stars": 4.6,
       "reviews": 127,
       "phone": "(205) 703-0553",
-      "hours": "Open ⋅ Closes 6PM",
+      "hours": "Closes soon ⋅ 6PM",
       "type": "Thrift store"
     },
     {
@@ -26,7 +26,7 @@
       "stars": 4.7,
       "reviews": 39,
       "phone": "(205) 595-9049",
-      "hours": "Open ⋅ Closes 6PM",
+      "hours": "Closes soon ⋅ 6PM",
       "type": "Consignment shop"
     },
     {
@@ -37,7 +37,7 @@
       "stars": 3.9,
       "reviews": 16,
       "phone": "(205) 591-4631",
-      "hours": "Open ⋅ Closes 3:30PM",
+      "hours": "Closed ⋅ Opens 10AM Sat",
       "type": "Thrift store"
     },
     {
@@ -68,7 +68,7 @@
       "paid": false,
       "address": "Birmingham, AL",
       "phone": "(205) 315-3131",
-      "hours": "Open ⋅ Closes 6PM",
+      "hours": "Closes soon ⋅ 6PM",
       "type": "Second hand store"
     },
     {
@@ -79,7 +79,7 @@
       "stars": 4.8,
       "reviews": 104,
       "phone": "(205) 714-5972",
-      "hours": "Open ⋅ Closes 5PM",
+      "hours": "Closed ⋅ Opens 10AM Sat",
       "type": "Pawn shop"
     },
     {
@@ -125,6 +125,17 @@
       "phone": "(205) 902-1367",
       "hours": "Temporarily closed",
       "type": "Consignment shop"
+    },
+    {
+      "place_id": "18399693930806823196",
+      "title": "Goodwill - TEMPORARILY CLOSED for a Health Holiday",
+      "paid": false,
+      "address": "Birmingham, AL",
+      "stars": 3.4,
+      "reviews": 156,
+      "phone": "(205) 323-6331",
+      "hours": "Temporarily closed",
+      "type": "Thrift store"
     },
     {
       "place_id": "5001058914838293558",
@@ -190,17 +201,6 @@
       "reviews": 38,
       "phone": "(205) 573-6151",
       "hours": "Open ⋅ Closes 8PM",
-      "type": "Thrift store"
-    },
-    {
-      "place_id": "1595666698553153338",
-      "title": "The Foundry Thrift Store",
-      "paid": false,
-      "address": "Fairfield, AL",
-      "stars": 4.2,
-      "reviews": 374,
-      "phone": "(205) 424-2400",
-      "hours": "Open ⋅ Closes 9PM",
       "type": "Thrift store"
     },
     {

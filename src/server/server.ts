@@ -14,4 +14,8 @@ app.use(express.json());
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Server listening on port: ${port}`));
 
+//Execute the Google GMAP SERPs search
 // google.search();
+
+//POST JSON to don8tr DB
+// google.post();
