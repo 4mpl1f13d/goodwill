@@ -41,7 +41,7 @@ export const searchEbay = () => {
         .then(body => {
             // console.log(body);
 
-            console.log(body.findCompletedItemsResponse.ack);
+            console.log(body.findCompletedItemsResponse.ack.json());
             
             // body.findCompletedItemsResponse.searchResult.item.forEach(element => {
             //     // DB info on top, JSON table info on bottom

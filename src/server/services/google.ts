@@ -38,7 +38,6 @@ export const searchGoogle = () => {
     fetch(fullG_URL)
         .then(res => res.json())
         .then(body => {
-            
             console.log(body);
             body.maps_results.forEach(element => {
                 // DB info on top, JSON table info on bottom
