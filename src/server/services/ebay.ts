@@ -1,27 +1,22 @@
-
 import fetch from 'node-fetch';
 import * as mysql from "mysql";
-// import fs = require('fs');
 import UID from './uid';
 import credentials from '../config/credentials';
-import { response } from 'express';
 const fs = require('fs');
 const ebayUID = UID;
 
 // Test Write data to ebay.JSON
-// const search = () => {
-//     fetch(fullURL)
-//         .then(res => res.text())
-//         .then(body => write(body))
-//         .catch(err => console.log(err));
-// }
-
-// const write = (body) => {
-//     for (let i = 0; i < 1; i++) {
-//         fs.writeFile('ebay.json', body, () => { return });
-//     }
-// }
-
+const jsonEbay = () => {
+    fetch(fullE_URL)
+        .then(res => res.text())
+        .then(body => writeEbay(body))
+        .catch(err => console.log(err));
+}
+const writeEbay = (body) => {
+    for (let i = 0; i < 1; i++) {
+        fs.writeFile('ebay.json', body, () => { return });
+    }
+}
 
 // MySQL Connection
 var connection = mysql.createConnection({
@@ -33,36 +28,21 @@ var connection = mysql.createConnection({
 
 // import rest api data to create a new google records into mysql database - Update ebayfoos table
 export const searchEbay = () => {
-    // Testing creds for google and FS
-    // console.log(credentials.googleKey);
-
     fetch(fullE_URL)
         .then(res => res.json())
         .then(body => {
-            // console.log(body);
-
-            console.log(body.findCompletedItemsResponse.ack.json());
-            
-            // body.findCompletedItemsResponse.searchResult.item.forEach(element => {
-            //     // DB info on top, JSON table info on bottom
-            //     connection.query(`insert into ebayfoos(searchid, keywords, grade, marketvalue, galleryURL) values
-            //     (?, ?, ?, ?, ?)`, [ebayUID, keywords, element.condition.conditionId, element.sellingStatus.convertedCurrentPrice.__value__, element.galleryURL], function (error, results, fields) {
-            //         if (error) throw error;
-            //     });
-            // });
+            body.findCompletedItemsResponse[0].searchResult[0].item.forEach(element => {
+                // DB info on top, JSON table info on bottom
+                connection.query(`insert into ebayfoos(searchid, keywords, grade, marketvalue, galleryURL) values
+                (?, ?, ?, ?, ?)`, [ebayUID, keywords, element.condition.conditionId, element.sellingStatus[0].convertedCurrentPrice[0].__value__, element.galleryURL[0]], function (error, results, fields) {
+                    if (error) throw error;
+                });
+            });
         })
         .catch(err => console.log(err));
 }
 
-// TESTING
-// convert json to array of objects.
-// const results = Object.keys(data).map(key => {
-//     return {
-//         id: key,
-//     }
-// });
-
-export const
+const
     // hard-coded condition.
     condition: number = 3000,
     // base url (points to ebay get).
@@ -91,9 +71,16 @@ export const
     fullPayload = payload + keywords + itemFilter0 + itemFilter1 + pagination + sortOrder,
     fullE_URL: string = baseURL + headers + fullPayload;
 
+// exports.
+export default {
+    fullE_URL,
+    searchEbay,
+}
 
-
-// export default {
-//     fullE_URL,
-//     search,
-// }
+// TESTING
+// convert json to array of objects.
+// const results = Object.keys(data).map(key => {
+//     return {
+//         id: key,
+//     }
+// });

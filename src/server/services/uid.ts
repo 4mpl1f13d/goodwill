@@ -5,6 +5,6 @@ import UIDGenerator from 'uid-generator';
 const UIDGenerator = require('uid-generator');
 const uidgen = new UIDGenerator();
 let UID = uidgen.generateSync();
-console.log(UID);
+// console.log(UID);
 
 export default UID;
