@@ -18,18 +18,18 @@ class CheckOut extends Component {
           <table className="container">
             <thead>
               <tr>
-                <th scope="col" className="border-0 bg-light">
+                <th scope="col" className="border-0 bg-secondary">
                   <div className="p-2 px-3 text-uppercase">Product</div>
                 </th>
-                <th scope="col" className="border-0 bg-light">
+                <th scope="col" className="border-0 bg-secondary">
                   <div className="py-2 text-uppercase">
                     Estimated Tax Savings
                   </div>
                 </th>
-                <th scope="col" className="border-0 bg-light">
+                <th scope="col" className="border-0 bg-secondary">
                   <div className="py-2 text-uppercase">Quantity</div>
                 </th>
-                <th scope="col" className="border-0 bg-light">
+                <th scope="col" className="border-0 bg-secondary">
                   <div className="py-2 text-uppercase">Remove</div>
                 </th>
               </tr>
@@ -39,7 +39,7 @@ class CheckOut extends Component {
             <tbody>
               {this.props.itemStats.map((item, id) => {
                 return (
-                  <tr>
+                  <tr key={id}>
                     <th scope="row">
                       <div className="p-2">
                         <img
@@ -68,7 +68,7 @@ class CheckOut extends Component {
                       <strong>{id}</strong>
                     </td>
                     <td className="align-middle">
-                      <a href="#" className="text-light">
+                      <a href="#" className="text-light" onClick={() => this.props.onDelete(item.id)} > 
                         <i className="fa fa-trash" />
                       </a>
                     </td>
