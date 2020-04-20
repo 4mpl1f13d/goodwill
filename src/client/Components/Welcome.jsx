@@ -35,14 +35,14 @@ class Welcome extends Component {
                 <div className="col-4 col-12-mobile">
                   <select className="" name="condition" id="condition" onChange={(event)=> this.props.handleConditionInput(event)}>
                     <option selected="selected">Condition</option>
-                    <option id="condition-broke" value="broke">
-                      broke
+                    <option id="condition-broke" value="Broken">
+                      Broken
                     </option>
-                    <option id="condition-used" value="used">
-                      used
+                    <option id="condition-used" value="Used">
+                      Used
                     </option>
-                    <option id="condition-new" value="new">
-                      new
+                    <option id="condition-new" value="New">
+                      New
                     </option>
                   </select>
                 </div>

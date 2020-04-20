@@ -9,7 +9,8 @@ export class Details extends Component {
         newMake: props.newMake,
         newModel: props.newModel,
         newCondition: props.newCondition,
-        newAppraisal: props.newAppraisal
+        newAppraisal: props.newAppraisal,
+        // handleDelete: props.handleDelete
     };
   }
 
@@ -31,9 +32,9 @@ export class Details extends Component {
             </div>
 
             <div className="col-12" style={{ overflowX: 'scroll', overflowY: 'hidden', whiteSpace: 'nowrap' }}>
-              {this.props.itemStats.map((item, id) => {
+              {this.props.itemStats.map((item) => {
                 return (
-                  <div className="d-inline-block mx-2 my-2" key={id}>
+                  <div className="d-inline-block mx-2 my-2" key={item.id}>
                     <Card border="success" style={{ width: '14rem' }}>
                       <Card.Header>{counter++}</Card.Header>
                       <Card.Body>
@@ -44,7 +45,7 @@ export class Details extends Component {
                             <input className="form-control my-2 text-center" type="text" placeholder={item.appraisal} style={{ width: '100px' }} readOnly />
                           </div>
                         </Card.Text>
-                        <button className="btn btn-danger btn-sm" style={{ width: '95px', height: '30px' }}><i className="fa fa-trash"></i> Delete </button>
+                        <button className="btn btn-danger btn-sm" style={{ width: '95px', height: '30px' }} onClick={() => this.props.onDelete(item.id)} ><i className="fa fa-trash"></i> Delete </button>
                       </Card.Body>
                     </Card>
                   </div>
