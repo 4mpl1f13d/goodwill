@@ -10,6 +10,7 @@ export class Details extends Component {
       newModel: props.newModel,
       newCondition: props.newCondition,
       newAppraisal: props.newAppraisal,
+
     };
   }
 
@@ -26,7 +27,6 @@ export class Details extends Component {
             <div>
               <h4>List Items</h4>
             </div>
-
             <div
               className="col-12"
               style={{
@@ -62,6 +62,7 @@ export class Details extends Component {
                         >
                           <i className="fa fa-trash"></i> Delete{" "}
                         </button>
+
                       </Card.Body>
                     </Card>
                   </div>

@@ -1,110 +1,88 @@
 import fetch from 'node-fetch';
 import * as mysql from "mysql";
 // import fs = require('fs');
-
+import UID from './uid';
 import credentials from '../config/credentials';
-//import google from '../google.json';
 import { response } from 'express';
 const fs = require('fs');
 
-let google =  [] ; 
+export const googleUID = UID;
 
-    // if (fs.existsSync('google.json')) {
-      //  google = JSON.parse(fs.readFileSync('google.json'))
-    //}
+// Test Write data to google.JSON
+// const search = () => {
+//     fetch(fullURL)
+//         .then(res => res.text())
+//         .then(body => write(body))
+//         .catch(err => console.log(err));
+// }
 
-    fs.readFileSync('google.json', (data) => {
-        console.log(data.maps_results.title)
-    })
+// const write = (body) => {
+//     for (let i = 0; i < 1; i++) {
+//         fs.writeFile('google.json', body, () => { return });
+//     }
+// }
 
-interface GooProps {
-    title: String,
-    address: String,
-    phone:String
-}
+// MySQL Connection
+var connection = mysql.createConnection({
+    host: 'localhost',
+    user: credentials.mysql.user,
+    password: credentials.mysql.password,
+    database: credentials.mysql.database
+});
 
-
-const search = () => {
+// import rest api data to create a new google records into mysql database - Update googlefoo table
+export const searchGoogle = () => {
     // Testing creds for google and FS
     // console.log(credentials.googleKey);
 
     fetch(fullG_URL)
-        .then(res => res.text())
-        .then(body => write(body))
+        .then(res => res.json())
+        .then(body => {
+            console.log(body);
+            body.maps_results.forEach(element => {
+                // DB info on top, JSON table info on bottom
+                connection.query(`insert into googlefoos(zip, searchid, gmaps_serp_loc1, gmaps_serp_add1, gmaps_serp_ph1 ) values(?, ?, ?, ?, ? )`, [gZip, googleUID, element.title, element.address, element.phone], function (error, results, fields) {
+                    if (error) throw error;
+                });
+            });
+        })
         .catch(err => console.log(err));
 }
 
-const write = (body) => {
-    for (let i = 0; i < 1; i++) {
-        fs.writeFile('google.json', body, () => { return });
-    }
-}
+// TESTING
+// convert json to array of objects.
+// const results = Object.keys(data).map(key => {
+//     return {
+//         id: key,
+//     }
+// });
 
-// // convert json to array of objects.
-// // const results = Object.keys(data).map(key => {
-// //     return {
-// //         id: key,
-// //     }
-// // });
-
-const
+export const
     // base url (points to ZENSERP get)
     baseURL: string = "https://app.zenserp.com/api/v2/search?",
     // the api call.
     gApi: string = "apikey=" + credentials.googleKey + "&",
     // keywords (search terms).
     keywords: string = "q=Thrift%20Store%20",
-    // DB zip code call needed to poplulate varibale successfully
-    gZip: string = "35222",
-    //directions URL    
+    // DB zip code call needed to populate variable successfully
+    gZip: string = "35114",
+    // // directions URL    
     // dirURL: string = "&directions=",
-    //Address from directions from GMAPS SERP
+    // //Address from directions from GMAPS SERP
     // dirAddy: string = "&directions.address_parsed", 
-    // Queiontionable Address
+    // // Questionable Address
     // quesAddy: string = "&address",
-    //Some URL
+    // //Some URL
     // someURL: string = "&url",
     //remainder string
     gRemString: string = "&tbm=lcl",
 
-    // BASE concatentation
+    // BASE concatenation
     //Added search strings  --- REM + dirAddy + dirURL  + quesAddy + someURL
-    fullG_URL: string = baseURL + gApi + keywords + gZip + gRemString
-    ;
-
-//Google JSON Fucntion Typescript Interface 
+    fullG_URL: string = baseURL + gApi + keywords + gZip + gRemString;
 
 
-// import rest api data to create a new google records into mysql database
-// const Query = (query: string, values?: any) => {
-
-//     const sql = mysql.format(query, values);
-//     console.log(sql);
-
-//     return new Promise((resolve, reject) => {
-//         pool.query(sql, (err, results) => {
-//             if (err) {
-//                 reject(err);
-//             } else {
-//                 resolve(results);
-//             }
-//         });
-//     });
-// };
-
-
-// Update googlefoo table with info from JSON
-//  gZip(zip) JSON , title(gmaps_serp_loc1) JSON, address(gmaps_serp_add1), phone(gmaps_serp_ph1)
-// const post = (title: string, address: string, phone: string) =>
-//     Query(`
-// INSERT INTO googlefoos (zip, gmaps_serp_loc1, gmaps_serp_add1, gmaps_serp_ph1) 
-// VALUE (?, ? ,?);`, [title, address, phone]
-//     );
-
-
-export default {
-    fullG_URL,
-    search,
-    //Query, 
-    // post
-}
+    // export default {
+//     fullG_URL,
+//     search,
+// }

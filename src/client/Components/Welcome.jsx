@@ -56,15 +56,10 @@ class Welcome extends Component {
 
               <div className="row">
                 <div className="col-4 col-12-mobile">
-                  <select
-                    className=""
-                    name="condition"
-                    id="condition"
-                    onChange={(event) => this.props.handleConditionInput(event)}
-                  >
-                    <option value="selected">Condition</option>
-                    <option id="condition-broke" value="Broke">
-                      Broke
+                  <select className="" name="condition" id="condition" onChange={(event)=> this.props.handleConditionInput(event)}>
+                    <option selected="selected">Condition</option>
+                    <option id="condition-broke" value="Broken">
+                      Broken
                     </option>
                     <option id="condition-used" value="Used">
                       Used
