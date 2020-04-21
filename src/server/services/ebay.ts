@@ -58,8 +58,8 @@ const
     dataFormat: string = "RESPONSE-DATA-FORMAT=" + "JSON" + "&",
     // payload:
     payload: string = "REST-PAYLOAD" + "&",
-    // keywords (search terms).
-    keywords: string = "keywords=" + "hp dv7-6b55 laptop" + "&",
+    // keywords (search terms). --  Used  / hp dv7-6b55 laptop / New Balance Men's MX517v1 Training Shoe 
+    keywords: string = "keywords=" + "New Balance MX517v1" + "&",
     // item filters.
     itemFilter0: string = "itemFilter(0)" + ".name=" + "SoldItemsOnly" + "&" + "itemFilter(0)" + ".value=" + "true" + "&",
     itemFilter1: string = "itemFilter(1)" + ".name=" + "Condition" + "&" + "itemFilter(1)" + ".value=" + condition + "&",
