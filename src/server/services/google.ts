@@ -82,7 +82,7 @@ export const
     fullG_URL: string = baseURL + gApi + keywords + gZip + gRemString;
 
 
-    // export default {
+// export default {
 //     fullG_URL,
-//     search,
+//     searchGoogle,
 // }
