@@ -22,7 +22,19 @@ export class Location extends Component {
 
   render() {
     return (
-      <section id="about" className="three">
+      <section
+        style={{
+          backgroundImage:
+            "url(" +
+            "https://images.unsplash.com/photo-1516546453174-5e1098a4b4af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" +
+            ")",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+        id="about"
+        className="three"
+      >
         <div className="container">
           <header>
             <h2>Pick Location</h2>
@@ -101,7 +113,7 @@ export class Location extends Component {
           </div>
 
           <div className="col-12 my-4">
-            <a href="#contact" className="button scrolly">
+            <a href="#checkOut" className="button scrolly">
               Review Donation
             </a>
           </div>

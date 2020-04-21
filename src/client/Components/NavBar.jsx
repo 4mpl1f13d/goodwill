@@ -23,11 +23,11 @@ class NavBar extends Component {
                   <span className="icon solid fa-search">Search</span>
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#top-2" id="top-link-2">
                   <span className="icon solid fa-calculator">Calculate</span>
                 </a>
-              </li>
+             </li>*/}
               <li>
                 <a href="#portfolio" id="portfolio-link">
                   <span className="icon solid fal fa-list-alt">Details</span>
@@ -36,12 +36,12 @@ class NavBar extends Component {
               <li>
                 <a href="#about" id="about-link">
                   <span className="icon solid fa-map-marker-alt">
-                    Pick Loction
+                    Pick Location
                   </span>
                 </a>
               </li>
               <li>
-                <a href="#contact" id="contact-link">
+                <a href="#checkOut" id="contact-link">
                   <span className="icon solid fa-envelope">Check Out</span>
                 </a>
               </li>

@@ -11,6 +11,7 @@ import CheckOut from "./CheckOut";
 class Home extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       itemStats: [
         {
@@ -36,6 +37,7 @@ class Home extends Component {
       newMake: "",
       newModel: "",
       newCondition: "",
+      total: "",
       // newAppraisal: Number
     };
 
@@ -43,6 +45,23 @@ class Home extends Component {
     this.handleMakeInput = this.handleMakeInput.bind(this);
     this.handleModelInput = this.handleModelInput.bind(this);
     this.handleConditionInput = this.handleConditionInput.bind(this);
+    this.addTotal = this.addTotal.bind(this);
+  }
+
+  addTotal() {
+    let appraisalArr = [];
+
+    this.state.itemStats.map((item) => {
+      appraisalArr.push(item.appraisal);
+    });
+
+    let adding = () => {
+      let sum = appraisalArr.reduce((a, b) => a + b, 0);
+
+      this.setState({ total: sum });
+    };
+
+    adding();
   }
 
   handleClick() {
@@ -52,9 +71,7 @@ class Home extends Component {
       condition: this.state.newCondition,
       // appraisal: this.state.newAppraisal
     };
-    this.setState({ itemStats: [...this.state.itemStats, newStats] }, () => {
-      console.log(this.state.itemStats);
-    });
+    this.setState({ itemStats: [...this.state.itemStats, newStats] }, () => {});
   }
 
   handleMakeInput(e) {
@@ -72,7 +89,7 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <title>Donater</title>
+        <title>Donator</title>
         <meta charSet="utf-8" />
         <meta
           name="viewport"
@@ -93,13 +110,17 @@ class Home extends Component {
             itemStats={this.state.itemStats}
           />
           {/*name and zip input*/}
-          <NameZip />
+
           {/* Details */}
-          <Details itemStats={this.state.itemStats} />
+          <Details
+            total={this.state.total}
+            addTotal={this.addTotal}
+            itemStats={this.state.itemStats}
+          />
           {/* Pickup Loaction */}
           <Location />
           {/* <CheckOut />*/}
-          <CheckOut itemStats={this.state.itemStats} />
+          <CheckOut total={this.state.total} itemStats={this.state.itemStats} />
         </div>
         {/* Footer */}
         <Footer />
