@@ -31,10 +31,11 @@ export const searchEbay = () => {
     fetch(fullE_URL)
         .then(res => res.json())
         .then(body => {
+            // console.log(body);
             body.findCompletedItemsResponse[0].searchResult[0].item.forEach(element => {
                 // DB info on top, JSON table info on bottom
                 connection.query(`insert into ebayfoos(searchid, keywords, grade, marketvalue, galleryURL) values
-                (?, ?, ?, ?, ?)`, [ebayUID, keywords, element.condition.conditionId, element.sellingStatus[0].convertedCurrentPrice[0].__value__, element.galleryURL[0]], function (error, results, fields) {
+                (?, ?, ?, ?, ?)`, [ebayUID, keywords, element.condition[0].conditionId, element.sellingStatus[0].convertedCurrentPrice[0].__value__, element.galleryURL[0]], function (error, results, fields) {
                     if (error) throw error;
                 });
             });
