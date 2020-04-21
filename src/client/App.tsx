@@ -11,7 +11,7 @@ class App extends React.Component<IAppProps, IAppState> {
 		};
 	}
 
-	async componentDidMount() {
+	/* async componentDidMount() {
 		try {
 			let r = await fetch('/api/hello');
 			let name = await r.json();
@@ -20,6 +20,7 @@ class App extends React.Component<IAppProps, IAppState> {
 			console.log(error);
 		}
 	}
+*/
 
 	render() {
 		return (

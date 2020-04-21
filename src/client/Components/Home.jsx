@@ -7,12 +7,12 @@ import CheckOut from "./CheckOut";
 import Footer from "./Footer";
 import NameZip from "./NameZip";
 import CheckOut from "./CheckOut";
-import { Alert } from 'react-alert';
-
+import { Alert } from "react-alert";
 
 class Home extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       itemStats: [
         {
@@ -28,7 +28,6 @@ class Home extends Component {
           condition: "New",
           appraisal: 150,
           id: 1,
-
         },
         {
           make: "Fire 7",
@@ -36,13 +35,13 @@ class Home extends Component {
           condition: "Used",
           appraisal: 25,
           id: 2,
-
         },
       ],
 
       newMake: "",
       newModel: "",
       newCondition: "",
+      total: "",
       newId: 3,
       // newAppraisal: Number
     };
@@ -51,7 +50,24 @@ class Home extends Component {
     this.handleMakeInput = this.handleMakeInput.bind(this);
     this.handleModelInput = this.handleModelInput.bind(this);
     this.handleConditionInput = this.handleConditionInput.bind(this);
+    this.addTotal = this.addTotal.bind(this);
     this.handleDeleteClick = this.handleDeleteClick.bind(this);
+  }
+
+  addTotal() {
+    let appraisalArr = [];
+
+    this.state.itemStats.map((item) => {
+      appraisalArr.push(item.appraisal);
+    });
+
+    let adding = () => {
+      let sum = appraisalArr.reduce((a, b) => a + b, 0);
+
+      this.setState({ total: sum });
+    };
+
+    adding();
   }
 
   handleClick() {
@@ -65,7 +81,7 @@ class Home extends Component {
     this.setState({ itemStats: [...this.state.itemStats, newStats] }, () => {
       console.log(this.state.itemStats);
     });
-    this.setState({ newId: this.state.newId++ })
+    this.setState({ newId: this.state.newId++ });
   }
 
   handleMakeInput(e) {
@@ -100,17 +116,17 @@ class Home extends Component {
   // handleDeleteClick = () => {
   //   alert('Button Clicked!');
   // }
-  handleDeleteClick = cardId => {
-    const cards = this.state.itemStats.filter(item => item.id !== cardId);
+  handleDeleteClick = (cardId) => {
+    const cards = this.state.itemStats.filter((item) => item.id !== cardId);
     this.setState({ itemStats: cards });
-    console.log('I did it')
+    console.log("I did it");
     // alert("Say Something");
-  }
+  };
 
   render() {
     return (
       <React.Fragment>
-        <title>Donater</title>
+        <title>Donator</title>
         <meta charSet="utf-8" />
         <meta
           name="viewport"
@@ -131,13 +147,19 @@ class Home extends Component {
             itemStats={this.state.itemStats}
           />
           {/*name and zip input*/}
-          <NameZip />
+
           {/* Details */}
-          <Details itemStats={this.state.itemStats} onDelete={this.handleDeleteClick} />
+          <Details
+            itemStats={this.state.itemStats}
+            onDelete={this.handleDeleteClick}
+          />
           {/* Pickup Loaction */}
           <Location />
           {/* <CheckOut />*/}
-          <CheckOut itemStats={this.state.itemStats} onDelete={this.handleDeleteClick} />
+          <CheckOut
+            itemStats={this.state.itemStats}
+            onDelete={this.handleDeleteClick}
+          />
         </div>
         {/* Footer */}
         <Footer />

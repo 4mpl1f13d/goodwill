@@ -5,23 +5,24 @@ class CheckOut extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
     return (
-      <div>
+      <React.Fragment>
         {/* Shopping cart table */}
-        <div className="one dark cover">
+        <div id="checkOut" className="one cover" style={{ backgroundColor: "#fff" }}>
           <div className="row">
-            <h1 style={{ color: "grey", padding: "2em" }}>
+            <h1 style={{ color: "#333", padding: "2em" }}>
               Goodwill tax results
             </h1>
           </div>
           <table className="container">
             <thead>
               <tr>
-                <th scope="col" className="border-0 bg-secondary">
+                <th scope="col" className="border-0 bg-dark">
                   <div className="p-2 px-3 text-uppercase">Product</div>
                 </th>
-                <th scope="col" className="border-0 bg-secondary">
+                <th scope="col" className="border-0 bg-dark">
                   <div className="py-2 text-uppercase">
                     Estimated Tax Savings
                   </div>
@@ -30,6 +31,7 @@ class CheckOut extends Component {
                   <div className="py-2 text-uppercase">Quantity</div>
                 </th>
                 <th scope="col" className="border-0 bg-secondary">
+
                   <div className="py-2 text-uppercase">Remove</div>
                 </th>
               </tr>
@@ -39,15 +41,17 @@ class CheckOut extends Component {
             <tbody>
               {this.props.itemStats.map((item, id) => {
                 return (
-                  <tr key={id}>
-                    <th scope="row">
+                  <tr>
+                    <th scope="row" style={{ backgroundColor: "#A9A9A9",
+                  borderTop: "solid" ".1px" "#fff", marginTop: "0" }}>
                       <div className="p-2">
                         <img
-                          src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-2_qxjis2.jpg"
+                          src="https://source.unsplash.com/random/50x50"
                           alt
                           width={70}
                           className="img-fluid rounded shadow-sm"
                         />
+                        <br />
                         <div className="ml-3 d-inline-block align-middle">
                           <h5 className="mb-0">
                             {" "}
@@ -68,8 +72,8 @@ class CheckOut extends Component {
                       <strong>{id}</strong>
                     </td>
                     <td className="align-middle">
-                      <a href="#" className="text-light" onClick={() => this.props.onDelete(item.id)} > 
-                        <i className="fa fa-trash" />
+                      <a href="#" className="text-light">
+                        <i className="fa fa-trash" style={{color: "#A9A9A9"}} />
                       </a>
                     </td>
                   </tr>
@@ -85,21 +89,10 @@ class CheckOut extends Component {
               <div className="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
                 Selected GoodWill Location
               </div>
+
               <div className="p-2">
-                <img
-                  src="assets/images/741-SW-19-Moore-2-of-3-450x250.jpg"
-                  alt
-                  width={70}
-                  className="img-fluid rounded shadow-sm"
-                />
                 <div className="ml-3 d-inline-block align-middle">
-                  <h5 className="mb-0">
-                    <a
-                      href="#"
-                      className="text-light d-inline-block align-middle"
-                    />
-                    GoodWill Hoover
-                  </h5>
+                  <h5 className="mb-0">GoodWill Hoover</h5>
                   <span className="text-muted font-weight-normal font-italic d-block">
                     6215 Tattersall Blvd Unit 105, Hoover, AL 35242
                   </span>
@@ -135,7 +128,7 @@ class CheckOut extends Component {
                 <ul className="list-unstyled mb-4">
                   <li className="d-flex justify-content-between py-3 border-bottom">
                     <strong className="text-muted">Order Subtotal </strong>
-                    <strong>$390.00</strong>
+                    <strong>${this.props.total}.00</strong>
                   </li>
                   <li className="d-flex justify-content-between py-3 border-bottom">
                     <strong className="text-muted">
@@ -145,7 +138,8 @@ class CheckOut extends Component {
                   </li>
                   <li className="d-flex justify-content-between py-3 border-bottom">
                     <strong className="text-muted">Total</strong>
-                    <h5 className="font-weight-bold">$400.00</h5>
+
+                    <strong>${this.props.total}.00</strong>
                   </li>
                 </ul>
                 <a
@@ -159,7 +153,7 @@ class CheckOut extends Component {
           </div>
           {/*MY CONTAINER*/}
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
