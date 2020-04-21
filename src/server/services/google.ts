@@ -38,7 +38,7 @@ export const searchGoogle = () => {
     fetch(fullG_URL)
         .then(res => res.json())
         .then(body => {
-            console.log(body);
+            //console.log(body);
             body.maps_results.forEach(element => {
                 // DB info on top, JSON table info on bottom
                 connection.query(`insert into googlefoos(zip, searchid, gmaps_serp_loc1, gmaps_serp_add1, gmaps_serp_ph1 ) values(?, ?, ?, ?, ? )`, [gZip, googleUID, element.title, element.address, element.phone], function (error, results, fields) {
