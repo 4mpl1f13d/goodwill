@@ -12,13 +12,15 @@ router.get('/hello', (req, res, next) => {
 //Google JSON API Test search function....
 router.get('/googleTest', (req, res) => {
     res.send(google.searchGoogle());
+    // Test Google results...
+    //  res.send(google.jsonGoogle());
 });
 
 
 //Ebay JSON API Test search function....
 router.get('/ebayTest', (req, res) => {
     res.send(ebay.searchEbay());
-    // Test results...
+    // Test Ebay results...
     // res.send(ebay.jsonEbay());
 });
 

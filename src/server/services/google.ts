@@ -9,18 +9,18 @@ const fs = require('fs');
 export const googleUID = UID;
 
 // Test Write data to google.JSON
-// const search = () => {
-//     fetch(fullURL)
-//         .then(res => res.text())
-//         .then(body => write(body))
-//         .catch(err => console.log(err));
-// }
+export const jsonGoogle = () => {
+    fetch(fullG_URL)
+        .then(res => res.text())
+        .then(body => write(body))
+        .catch(err => console.log(err));
+}
 
-// const write = (body) => {
-//     for (let i = 0; i < 1; i++) {
-//         fs.writeFile('google.json', body, () => { return });
-//     }
-// }
+const write = (body) => {
+    for (let i = 0; i < 1; i++) {
+        fs.writeFile('google.json', body, () => { return });
+    }
+}
 
 // MySQL Connection
 var connection = mysql.createConnection({
@@ -64,8 +64,8 @@ export const
     gApi: string = "apikey=" + credentials.googleKey + "&",
     // keywords (search terms).
     keywords: string = "q=Thrift%20Store%20",
-    // DB zip code call needed to populate variable successfully
-    gZip: string = "35114",
+    // DB zip code call needed to populate variable successfully -- used 35222 / 35117 / 35173 / 35005
+    gZip: string = "35005",
     // // directions URL    
     // dirURL: string = "&directions=",
     // //Address from directions from GMAPS SERP

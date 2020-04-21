@@ -1,54 +1,94 @@
 {
   "query": {
-    "apikey": "e0131b60-7857-11ea-a5bb-c5c7e12128c5",
-    "q": "Thrift Store 35222",
+    "apikey": "51bbdf70-81b3-11ea-9fee-fdd073b18039",
+    "q": "Thrift Store 35005",
     "tbm": "lcl",
-    "url": "http://www.google.com/search?q=Thrift+Store+35222&tbm=lcl&hl=en&gl=us"
+    "url": "http://www.google.com/search?q=Thrift+Store+35005&tbm=lcl&hl=en&gl=us"
   },
   "related_searches": [],
   "maps_results": [
     {
-      "place_id": "10031333865134088488",
-      "title": "Sozo Trading Co.",
+      "place_id": "4278321249645605770",
+      "title": "Forestdale Thrift",
       "paid": false,
       "address": "Birmingham, AL",
-      "stars": 4.6,
-      "reviews": 127,
-      "phone": "(205) 703-0553",
-      "hours": "Closes soon ⋅ 6PM",
+      "stars": 2.6,
+      "reviews": 28,
+      "phone": "(205) 791-0039",
+      "hours": "Closes soon ⋅ 7PM",
       "type": "Thrift store"
     },
     {
-      "place_id": "12882470148836295274",
-      "title": "Zoe Forest Park",
+      "place_id": "1595666698553153338",
+      "title": "The Foundry Thrift Store",
+      "paid": false,
+      "address": "Fairfield, AL",
+      "stars": 4.2,
+      "reviews": 374,
+      "phone": "(205) 424-2400",
+      "hours": "Open ⋅ Closes 9PM",
+      "type": "Thrift store"
+    },
+    {
+      "place_id": "9429489047840744694",
+      "title": "New Direction Ministries",
+      "paid": false,
+      "address": "Fairfield, AL",
+      "stars": 4.8,
+      "reviews": 5,
+      "phone": "(205) 786-7603",
+      "hours": "Closed ⋅ Opens 10AM Wed",
+      "type": "Thrift store"
+    },
+    {
+      "place_id": "8747965880470498979",
+      "title": "Big Saver Thrift Stores",
+      "paid": false,
+      "address": "Bessemer, AL",
+      "stars": 3.8,
+      "reviews": 137,
+      "phone": "(205) 424-4958",
+      "hours": "Open ⋅ Closes 9PM",
+      "type": "Thrift store"
+    },
+    {
+      "place_id": "12801662638602006084",
+      "title": "Holland Family Auto",
+      "paid": false,
+      "address": "Adamsville, AL",
+      "stars": 4.7,
+      "reviews": 71,
+      "phone": "(205) 674-6004",
+      "hours": "Closed ⋅ Opens 8:30AM Wed",
+      "type": "Used car dealer"
+    },
+    {
+      "place_id": "640211835419328050",
+      "title": "J's Closet",
       "paid": false,
       "address": "Birmingham, AL",
-      "stars": 4.7,
-      "reviews": 39,
-      "phone": "(205) 595-9049",
-      "hours": "Closes soon ⋅ 6PM",
+      "stars": 3.5,
+      "reviews": 2,
+      "phone": "(205) 908-7472",
+      "hours": "Closed ⋅ Opens 8AM Sat",
+      "type": "Thrift store"
+    },
+    {
+      "place_id": "5312533568772509604",
+      "title": "Etta Joe's Designer Apparel Plus Consignments",
+      "paid": false,
+      "address": "Pleasant Grove, AL",
       "type": "Consignment shop"
     },
     {
-      "place_id": "3916175319780693264",
-      "title": "Fifty-Fifth Place",
+      "place_id": "200423793863580758",
+      "title": "Big Saver Thrift Stores, Inc.",
       "paid": false,
       "address": "Birmingham, AL",
-      "stars": 3.9,
-      "reviews": 16,
-      "phone": "(205) 591-4631",
-      "hours": "Closed ⋅ Opens 10AM Sat",
-      "type": "Thrift store"
-    },
-    {
-      "place_id": "2732009853468009042",
-      "title": "King's Home Thrift",
-      "paid": false,
-      "address": "Irondale, AL",
       "stars": 3.8,
-      "reviews": 56,
-      "phone": "(205) 956-5658",
-      "hours": "Open ⋅ Closes 8PM",
+      "reviews": 269,
+      "phone": "(205) 833-4696",
+      "hours": "Open ⋅ Closes 9PM",
       "type": "Thrift store"
     },
     {
@@ -59,48 +99,6 @@
       "stars": 4.1,
       "reviews": 507,
       "phone": "(205) 951-9230",
-      "hours": "Open ⋅ Closes 9PM",
-      "type": "Thrift store"
-    },
-    {
-      "place_id": "6018486121700121257",
-      "title": "BIRMINGHAM AUTO CONSIGNMENT GALLERY",
-      "paid": false,
-      "address": "Birmingham, AL",
-      "phone": "(205) 315-3131",
-      "hours": "Closes soon ⋅ 6PM",
-      "type": "Second hand store"
-    },
-    {
-      "place_id": "15223865683076296458",
-      "title": "Delta Pawn",
-      "paid": false,
-      "address": "Birmingham, AL",
-      "stars": 4.8,
-      "reviews": 104,
-      "phone": "(205) 714-5972",
-      "hours": "Closed ⋅ Opens 10AM Sat",
-      "type": "Pawn shop"
-    },
-    {
-      "place_id": "17140332138999207470",
-      "title": "Manitou - Vintage Shop",
-      "paid": false,
-      "address": "Temporarily closed",
-      "stars": 4.7,
-      "reviews": 15,
-      "phone": "(205) 907-7024",
-      "hours": "Temporarily closed",
-      "type": "Vintage clothing store"
-    },
-    {
-      "place_id": "200423793863580758",
-      "title": "Big Saver Thrift Stores, Inc.",
-      "paid": false,
-      "address": "Birmingham, AL",
-      "stars": 3.8,
-      "reviews": 269,
-      "phone": "(205) 833-4696",
       "hours": "Open ⋅ Closes 9PM",
       "type": "Thrift store"
     },
@@ -116,36 +114,14 @@
       "type": "Thrift store"
     },
     {
-      "place_id": "4339157949502994400",
-      "title": "Kids Market & Mom",
-      "paid": false,
-      "address": "Irondale, AL · In Eastwood Plaza",
-      "stars": 4.5,
-      "reviews": 112,
-      "phone": "(205) 902-1367",
-      "hours": "Temporarily closed",
-      "type": "Consignment shop"
-    },
-    {
-      "place_id": "18399693930806823196",
-      "title": "Goodwill - TEMPORARILY CLOSED for a Health Holiday",
+      "place_id": "10031333865134088488",
+      "title": "Sozo Trading Co.",
       "paid": false,
       "address": "Birmingham, AL",
-      "stars": 3.4,
-      "reviews": 156,
-      "phone": "(205) 323-6331",
-      "hours": "Temporarily closed",
-      "type": "Thrift store"
-    },
-    {
-      "place_id": "5001058914838293558",
-      "title": "Habitat ReStore",
-      "paid": false,
-      "address": "Irondale, AL",
-      "stars": 4,
-      "reviews": 214,
-      "phone": "(205) 951-1234",
-      "hours": "Open ⋅ Closes 7PM",
+      "stars": 4.6,
+      "reviews": 127,
+      "phone": "(205) 703-0553",
+      "hours": "Closed ⋅ Opens 9AM Wed",
       "type": "Thrift store"
     },
     {
@@ -160,37 +136,15 @@
       "type": "Thrift store"
     },
     {
-      "place_id": "5990553168369900019",
-      "title": "Bargain Hunt",
-      "paid": false,
-      "address": "Birmingham, AL · In Crestwood Festival Center",
-      "stars": 4.1,
-      "reviews": 297,
-      "phone": "(205) 595-0460",
-      "hours": "Open ⋅ Closes 9PM",
-      "type": "Discount store"
-    },
-    {
-      "place_id": "844070399622270500",
-      "title": "America's Thrift Stores",
-      "paid": false,
-      "address": "Gardendale, AL",
-      "stars": 4,
-      "reviews": 292,
-      "phone": "(205) 631-1238",
-      "hours": "Temporarily closed",
-      "type": "Thrift store"
-    },
-    {
-      "place_id": "2533298869596804080",
-      "title": "Downtown Jimmie Hale Mission",
+      "place_id": "9466672720549902628",
+      "title": "Dirt Cheap",
       "paid": false,
       "address": "Birmingham, AL",
-      "stars": 4.1,
-      "reviews": 84,
-      "phone": "(205) 324-2271",
-      "hours": "Open 24 hours",
-      "type": "Donations center"
+      "stars": 3.7,
+      "reviews": 128,
+      "phone": "(205) 791-6072",
+      "hours": "Open ⋅ Closes 8PM",
+      "type": "Discount store"
     },
     {
       "place_id": "5898163203258800055",
@@ -200,7 +154,50 @@
       "stars": 4.6,
       "reviews": 38,
       "phone": "(205) 573-6151",
-      "hours": "Open ⋅ Closes 8PM",
+      "hours": "Closed ⋅ Opens 9AM Wed",
+      "type": "Thrift store"
+    },
+    {
+      "place_id": "6955036486812467891",
+      "title": "The Walk-In Closet A Unique Consignment",
+      "paid": false,
+      "address": "Bessemer, AL",
+      "stars": 4.9,
+      "reviews": 22,
+      "phone": "(205) 506-2897",
+      "hours": "Closed ⋅ Opens 10AM Wed",
+      "type": "Consignment shop"
+    },
+    {
+      "place_id": "3916175319780693264",
+      "title": "Fifty-Fifth Place",
+      "paid": false,
+      "address": "Birmingham, AL",
+      "stars": 3.9,
+      "reviews": 16,
+      "phone": "(205) 591-4631",
+      "hours": "Closed ⋅ Opens 10AM Wed",
+      "type": "Thrift store"
+    },
+    {
+      "place_id": "16716667703715087029",
+      "title": "Lovelady Thrift Store",
+      "paid": false,
+      "address": "Center Point, AL",
+      "stars": 4.4,
+      "reviews": 410,
+      "phone": "(205) 951-9230",
+      "hours": "Open ⋅ Closes 9PM",
+      "type": "Thrift store"
+    },
+    {
+      "place_id": "17146321302809112219",
+      "title": "Planet Thrift",
+      "paid": false,
+      "address": "Center Point, AL · In Center Point Shopping Center",
+      "stars": 3.6,
+      "reviews": 14,
+      "hours": "Closes soon ⋅ 7PM",
       "type": "Thrift store"
     },
     {
@@ -215,14 +212,14 @@
       "type": "Thrift store"
     },
     {
-      "place_id": "16716667703715087029",
-      "title": "Lovelady Thrift Store",
+      "place_id": "2732009853468009042",
+      "title": "King's Home Thrift",
       "paid": false,
-      "address": "Center Point, AL",
-      "stars": 4.4,
-      "reviews": 411,
-      "phone": "(205) 951-9230",
-      "hours": "Open ⋅ Closes 9PM",
+      "address": "Irondale, AL",
+      "stars": 3.8,
+      "reviews": 56,
+      "phone": "(205) 956-5658",
+      "hours": "Open ⋅ Closes 8PM",
       "type": "Thrift store"
     }
   ]
