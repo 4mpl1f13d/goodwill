@@ -150,6 +150,8 @@ class Home extends Component {
 
           {/* Details */}
           <Details
+            total={this.state.total}
+            addTotal={this.addTotal}
             itemStats={this.state.itemStats}
             onDelete={this.handleDeleteClick}
           />
@@ -157,6 +159,7 @@ class Home extends Component {
           <Location />
           {/* <CheckOut />*/}
           <CheckOut
+            total={this.state.total}
             itemStats={this.state.itemStats}
             onDelete={this.handleDeleteClick}
           />

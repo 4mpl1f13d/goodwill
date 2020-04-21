@@ -27,10 +27,10 @@ class CheckOut extends Component {
                     Estimated Tax Savings
                   </div>
                 </th>
-                <th scope="col" className="border-0 bg-secondary">
+                <th scope="col" className="border-0 bg-dark">
                   <div className="py-2 text-uppercase">Quantity</div>
                 </th>
-                <th scope="col" className="border-0 bg-secondary">
+                <th scope="col" className="border-0 bg-dark">
 
                   <div className="py-2 text-uppercase">Remove</div>
                 </th>
