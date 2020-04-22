@@ -1,5 +1,5 @@
 import React, { Component, ReactFragment } from "react";
-import phoneNumbers from './Location';
+import phoneNumbers from "./Location";
 
 class CheckOut extends Component {
   constructor(props) {
@@ -33,9 +33,9 @@ class CheckOut extends Component {
                       Estimated Tax Savings
                     </div>
                   </th>
-                  <th scope="col" className="border-0 bg-dark">
+                  {/* <th scope="col" className="border-0 bg-dark">
                     <div className="py-2 text-uppercase">Quantity</div>
-                  </th>
+    </th>*/}
                   <th scope="col" className="border-0 bg-dark">
                     <div className="py-2 text-uppercase">Remove</div>
                   </th>
@@ -50,10 +50,9 @@ class CheckOut extends Component {
                       <th scope="row" style={{ backgroundColor: "#A9A9A9" }}>
                         <div className="p-2">
                           <img
-                            src="https://source.unsplash.com/random/50x50"
+                            src={item.image}
                             alt
-                            width={70}
-                            className="img-fluid rounded shadow-sm"
+                            className="bg rounded shadow-sm"
                             style={{ margin: "10px" }}
                           />
                           <br />
@@ -73,10 +72,13 @@ class CheckOut extends Component {
                       <td className="align-middle">
                         <strong>${item.appraisal}.00</strong>
                       </td>
-                      <td className="align-middle">
+                      {/*<td className="align-middle">
                         <strong>{id}</strong>
-                      </td>
-                      <td className="align-middle">
+                  </td>*/}
+                      <td
+                        className="align-middle"
+                        style={{ paddingLeft: "2em" }}
+                      >
                         <a href="#" className="text-light">
                           <i
                             className="fa fa-trash"

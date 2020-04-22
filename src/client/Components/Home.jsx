@@ -12,9 +12,9 @@ class Home extends Component {
   constructor(props) {
     super(props);
 
- // EX id = searchid AKA UID (DKVhKVCsR3JUemibU45rhq)/ item.make = hp / item.model = dv7-6b55 laptop (keywords=hp dv7-6b55 laptop&) / 
- // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $80.8
- // galleryURL as opacity background on card (https://thumbs2.ebaystatic.com/m/mdynTPmeixZC3K09ywiaDdQ/140.jpg
+    // EX id = searchid AKA UID (DKVhKVCsR3JUemibU45rhq)/ item.make = hp / item.model = dv7-6b55 laptop (keywords=hp dv7-6b55 laptop&) /
+    // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $80.8
+    // galleryURL as opacity background on card (https://thumbs2.ebaystatic.com/m/mdynTPmeixZC3K09ywiaDdQ/140.jpg
 
     this.state = {
       itemStats: [
@@ -24,11 +24,13 @@ class Home extends Component {
           condition: "Used",
           appraisal: 81,
           id: 0,
+          image:
+            "https://thumbs2.ebaystatic.com/m/mdynTPmeixZC3K09ywiaDdQ/140.jpg",
         },
 
- // EX id = searchid AKA UID (A5yUFngruhCZvg4L4ire4v)/ item.make = Vizio / item.model = D24h-C1& (keywords=Vizio D24h-C1&) / 
- // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $34.9
- // galleryURL as opacity background on card (https://thumbs3.ebaystatic.com/m/mcZoJz1WghKRxvmK3uMFRNg/140.jpg
+        // EX id = searchid AKA UID (A5yUFngruhCZvg4L4ire4v)/ item.make = Vizio / item.model = D24h-C1& (keywords=Vizio D24h-C1&) /
+        // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $34.9
+        // galleryURL as opacity background on card (https://thumbs3.ebaystatic.com/m/mcZoJz1WghKRxvmK3uMFRNg/140.jpg
 
         {
           make: "Vizio",
@@ -36,11 +38,13 @@ class Home extends Component {
           condition: "Used",
           appraisal: 35,
           id: 1,
+          image:
+            "https://thumbs3.ebaystatic.com/m/mcZoJz1WghKRxvmK3uMFRNg/140.jpg",
         },
 
- // EX id = searchid AKA UID (3tEUHTyExcgomwjmYZYP3Y)/ item.make = New Balance / item.model = MX517v1 (keywords=New Balance MX517v1&) / 
- // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $29.5
- // galleryURL as opacity background on card (https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg
+        // EX id = searchid AKA UID (3tEUHTyExcgomwjmYZYP3Y)/ item.make = New Balance / item.model = MX517v1 (keywords=New Balance MX517v1&) /
+        // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $29.5
+        // galleryURL as opacity background on card (https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg
 
         {
           make: "New Balance",
@@ -48,11 +52,13 @@ class Home extends Component {
           condition: "Used",
           appraisal: 30,
           id: 2,
+          image:
+            "https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg",
         },
 
- // EX id = searchid AKA UID (HtjmJtDLGoRLvWKzkyUGmX)/ item.make = hitachi / item.model = H2T500854S (keywords=corsair k95 rgb keyboard&)
- // item.condition = grade (1000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $147.6
- // galleryURL as opacity background on card (https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg
+        // EX id = searchid AKA UID (HtjmJtDLGoRLvWKzkyUGmX)/ item.make = hitachi / item.model = H2T500854S (keywords=corsair k95 rgb keyboard&)
+        // item.condition = grade (1000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $147.6
+        // galleryURL as opacity background on card (https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg
 
         {
           make: "corsair keyboard",
@@ -60,11 +66,13 @@ class Home extends Component {
           condition: "New",
           appraisal: 148,
           id: 3,
+          image:
+            "https://thumbs3.ebaystatic.com/m/mqCbZViBBPYGnOI-UdgXlsQ/140.jpg",
         },
 
-// EX id = searchid AKA UID (T1GVa4oTENMW2R2A6fB4pu)/ item.make = hitachi / item.model = H2T500854S (keywords=hitachi H2T500854S&)
- // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $18.6
- // galleryURL as opacity background on card (https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg
+        // EX id = searchid AKA UID (T1GVa4oTENMW2R2A6fB4pu)/ item.make = hitachi / item.model = H2T500854S (keywords=hitachi H2T500854S&)
+        // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $18.6
+        // galleryURL as opacity background on card (https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg
 
         {
           make: "Hitachi",
@@ -72,6 +80,8 @@ class Home extends Component {
           condition: "Used",
           appraisal: 19,
           id: 4,
+          image:
+            "https://thumbs4.ebaystatic.com/m/mUQBEWEdsjJzczChVOpi2fw/140.jpg",
         },
       ],
 
@@ -102,9 +112,6 @@ class Home extends Component {
       // ]
     };
 
-  
-    
-
     this.handleClick = this.handleClick.bind(this);
     this.handleMakeInput = this.handleMakeInput.bind(this);
     this.handleModelInput = this.handleModelInput.bind(this);
@@ -112,8 +119,6 @@ class Home extends Component {
     this.addTotal = this.addTotal.bind(this);
     this.handleDeleteClick = this.handleDeleteClick.bind(this);
     this.handleLocation = this.handleLocation.bind(this);
-
-
   }
 
   addTotal() {
@@ -138,7 +143,7 @@ class Home extends Component {
       model: this.state.newModel,
       condition: this.state.newCondition,
       id: this.state.newId++,
-      newLocation: this.state.newLocation
+      newLocation: this.state.newLocation,
       // appraisal: this.state.newAppraisal
     };
     this.setState({ itemStats: [...this.state.itemStats, newStats] }, () => {
@@ -160,9 +165,8 @@ class Home extends Component {
   }
 
   handleChange(e) {
-    this.setState({[e.target.name]: e.target.value})
+    this.setState({ [e.target.name]: e.target.value });
   }
-
 
   handleDeleteClick = (cardId) => {
     const cards = this.state.itemStats.filter((item) => item.id !== cardId);
@@ -212,7 +216,10 @@ class Home extends Component {
             addTotal={this.addTotal}
           />
           {/* Pickup Loaction */}
-          <Location phoneNumbers={this.state.phoneNumbers} handleLocation={this.handleLocation} />
+          <Location
+            phoneNumbers={this.state.phoneNumbers}
+            handleLocation={this.handleLocation}
+          />
           {/* <CheckOut />*/}
           <CheckOut
             total={this.state.total}
