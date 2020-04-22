@@ -36,11 +36,8 @@ class CheckOut extends Component {
                   </th>
                   {/* <th scope="col" className="border-0 bg-dark">
                     <div className="py-2 text-uppercase">Quantity</div>
-<<<<<<< HEAD
     </th>*/}
-=======
-                  </th> */}
->>>>>>> 1b6a238079b2b8502017e77103477dbad02038c4
+                 
                   <th scope="col" className="border-0 bg-dark">
                     <div className="py-2 text-uppercase">Remove</div>
                   </th>

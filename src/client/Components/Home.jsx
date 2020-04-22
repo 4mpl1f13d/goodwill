@@ -179,12 +179,6 @@ class Home extends Component {
     this.setState({ newCondition: e.target.value });
   }
 
-<<<<<<< HEAD
-  handleChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-
-=======
   // handleChange(e) {
   //   this.setState({[e.target.name]: e.target.value})
   // }
@@ -211,7 +205,6 @@ class Home extends Component {
     });
   }
 
->>>>>>> 1b6a238079b2b8502017e77103477dbad02038c4
   handleDeleteClick = (cardId) => {
     const cards = this.state.itemStats.filter((item) => item.id !== cardId);
     this.setState({ itemStats: cards });
@@ -259,14 +252,7 @@ class Home extends Component {
             addTotal={this.addTotal}
           />
           {/* Pickup Loaction */}
-<<<<<<< HEAD
-          <Location
-            phoneNumbers={this.state.phoneNumbers}
-            handleLocation={this.handleLocation}
-          />
-=======
           <Location handleLocationClick={this.handleLocationClick} handleBusiness={this.handleBusiness} handlePhone={this.handlePhone} phoneNumbers={this.state.phoneNumbers} />
->>>>>>> 1b6a238079b2b8502017e77103477dbad02038c4
           {/* <CheckOut />*/}
           <CheckOut
             total={this.state.total}
