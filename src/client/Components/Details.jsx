@@ -54,19 +54,13 @@ export class Details extends Component {
               className="col-12">
               {this.props.itemStats.map((item) => {
                 return (
-<<<<<<< HEAD
 
-                 <div className="d-inline-block mx-2 my-2" key={id}>
-                    <Card background src ="galleryURL"  border="success" style={{ width: "14rem" }}>
-                      <Card.Header>{counter++}</Card.Header>
-=======
                   <div className="d-inline-block mx-2 my-2" key={item.id}>
-                    <Card border="success" style={{ width: "12rem" }}>
+                    <Card background src ="" border="success" style={{ width: "12rem" }}>
                       <Card.Header style={{height: '35px'}}>{counter++}</Card.Header>
->>>>>>> cardupdateDelete
                       <Card.Body>
                         <Card.Title>
-                          {item.make} {item.model}
+                          {item.make} <br></br> {item.model}
                         </Card.Title>
                         <div className="d-flex justify-content-center">
                           <Card.Text>

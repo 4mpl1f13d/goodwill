@@ -19,13 +19,8 @@ class Home extends Component {
     this.state = {
       itemStats: [
         {
-<<<<<<< HEAD
           make: "HP laptop",
           model: "dv7-6b55",
-=======
-          make: "Sony Xp.",
-          model: "l3123",
->>>>>>> cardupdateDelete
           condition: "Used",
           appraisal: 81,
           id: 0,
@@ -37,7 +32,7 @@ class Home extends Component {
 
         {
           make: "Vizio",
-          model: "D24h-C1&",
+          model: "D24h-C1",
           condition: "Used",
           appraisal: 35,
           id: 1,
@@ -64,7 +59,7 @@ class Home extends Component {
           model: "k95 rgb",
           condition: "New",
           appraisal: 148,
-          id: 2,
+          id: 3,
         },
 
 // EX id = searchid AKA UID (T1GVa4oTENMW2R2A6fB4pu)/ item.make = hitachi / item.model = H2T500854S (keywords=hitachi H2T500854S&)
@@ -76,7 +71,7 @@ class Home extends Component {
           model: "MX517v1",
           condition: "Used",
           appraisal: 19,
-          id: 2,
+          id: 4,
         },
       ],
 
@@ -84,9 +79,31 @@ class Home extends Component {
       newModel: "",
       newCondition: "",
       total: "",
-      newId: 3,
+      newId: 5,
+      newLocation: "",
       // newAppraisal: Number
+
+      // phoneNumbers= [
+      //   {business: "Sozo Trading Co 4 41st St S, Birmingham, AL 35222",
+      //   phone: "(205) 703-0553"
+      //   },
+      //   {business: "Zoe Forest Park 3900 Clairmont Ave, Birmingham, AL 35222",
+      //   phone: "(205) 595-9049"
+      //   },
+      //   {business: "King's Home Thrift, 1569 Cooper Hill Rd, Irondale, AL 35210",
+      //   phone: "(205) 956-5658"
+      //   },
+      //   {business: "Fifty-Fifth Place / 5 55th Pl N, Birmingham, AL 35212 ",
+      //   phone: "(205) 591-4631"
+      //   },
+      //   {business: "Lovelady Thrift Store, 7720 Ludington Ln, Irondale, AL 35210",
+      //   phone: "(205) 951-9230"
+      //   }
+      // ]
     };
+
+  
+    
 
     this.handleClick = this.handleClick.bind(this);
     this.handleMakeInput = this.handleMakeInput.bind(this);
@@ -94,7 +111,8 @@ class Home extends Component {
     this.handleConditionInput = this.handleConditionInput.bind(this);
     this.addTotal = this.addTotal.bind(this);
     this.handleDeleteClick = this.handleDeleteClick.bind(this);
-    this.handleChange = this.handleChange.bind(this);
+    this.handleLocation = this.handleLocation.bind(this);
+
 
   }
 
@@ -120,6 +138,7 @@ class Home extends Component {
       model: this.state.newModel,
       condition: this.state.newCondition,
       id: this.state.newId++,
+      newLocation: this.state.newLocation
       // appraisal: this.state.newAppraisal
     };
     this.setState({ itemStats: [...this.state.itemStats, newStats] }, () => {
@@ -152,6 +171,10 @@ class Home extends Component {
     // alert("Say Something");
   };
 
+  handleLocation(e) {
+    this.setState({ newLocation: e.target.value });
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -175,6 +198,8 @@ class Home extends Component {
             newModel={this.state.newModel}
             newCondition={this.state.newCondition}
             itemStats={this.state.itemStats}
+            phoneNumbers={this.state.phoneNumbers}
+            handleLocation={this.handleLocation}
           />
           {/*name and zip input*/}
 
@@ -186,12 +211,14 @@ class Home extends Component {
             onDelete={this.handleDeleteClick}
           />
           {/* Pickup Loaction */}
-          <Location handleChange={this.handleChange} />
+          <Location phoneNumbers={this.state.phoneNumbers} handleLocation={this.handleLocation} />
           {/* <CheckOut />*/}
           <CheckOut
             total={this.state.total}
             itemStats={this.state.itemStats}
             onDelete={this.handleDeleteClick}
+            handleLocation={this.handleLocation}
+            phoneNumbers={this.state.phoneNumbers}
           />
         </div>
         {/* Footer */}

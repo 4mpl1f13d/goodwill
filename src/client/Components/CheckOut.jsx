@@ -1,4 +1,5 @@
 import React, { Component, ReactFragment } from "react";
+import phoneNumbers from './Location';
 
 class CheckOut extends Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class CheckOut extends Component {
         <div id="checkOut" className="one cover" style={{ backgroundColor: "#fff" }}>
           <div className="row">
             <h1 style={{ color: "#333", padding: "2em" }}>
-              Goodwill tax results
+              Goodwill Donation Summary
             </h1>
           </div>
           <table className="container">
@@ -24,12 +25,12 @@ class CheckOut extends Component {
                 </th>
                 <th scope="col" className="border-0 bg-dark">
                   <div className="py-2 text-uppercase">
-                    Estimated Tax Savings
+                    Estimated Tax Value
                   </div>
                 </th>
-                <th scope="col" className="border-0 bg-dark">
+                {/* <th scope="col" className="border-0 bg-dark">
                   <div className="py-2 text-uppercase">Quantity</div>
-                </th>
+                </th> */}
                 <th scope="col" className="border-0 bg-dark">
 
                   <div className="py-2 text-uppercase">Remove</div>
@@ -43,7 +44,7 @@ class CheckOut extends Component {
                 return (
                   <tr>
                     <th scope="row" style={{ backgroundColor: "#A9A9A9",
-                  borderTop: "solid" ".1px" "#fff", marginTop: "0" }}>
+                  borderTop: "solid .1px #fff", marginTop: "0" }}>
                       <div className="p-2">
                         <img
                           src="https://source.unsplash.com/random/50x50"
@@ -65,12 +66,12 @@ class CheckOut extends Component {
                         </div>
                       </div>
                     </th>
-                    <td className="align-middle">
-                      <strong>{item.appraisal}</strong>
+                    <td className="d-flex justify-content-center">
+                      <strong>${item.appraisal}</strong>
                     </td>
-                    <td className="align-middle">
+                    {/* <td className="align-middle">
                       <strong>{id}</strong>
-                    </td>
+                    </td> */}
                     <td className="align-middle">
                       <a href="#" className="text-light" onClick={() => this.props.onDelete(item.id)}>
                         <i className="fa fa-trash" style={{color: "#A9A9A9"}} />
@@ -94,9 +95,9 @@ class CheckOut extends Component {
                 <div className="ml-3 d-inline-block align-middle">
                   <h5 className="mb-0">GoodWill Hoover</h5>
                   <span className="text-muted font-weight-normal font-italic d-block">
-                    6215 Tattersall Blvd Unit 105, Hoover, AL 35242
+                    {this.props.handleLocation}
                   </span>
-                  (205) 403-6114 M-F 10-8PM
+                  {/* {this.props.phoneNumbers.phone} */}
                 </div>
               </div>
               <div className="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
