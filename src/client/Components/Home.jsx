@@ -120,8 +120,8 @@ class Home extends Component {
     this.handleConditionInput = this.handleConditionInput.bind(this);
     this.addTotal = this.addTotal.bind(this);
     this.handleDeleteClick = this.handleDeleteClick.bind(this);
-    // Please check handleLocation to make sure it is propper. Below here
-    this.handleLocation = this.handleLocation.bind(this);
+    // Please check handleLocation to make sure it is proper. Below here
+    // this.handleLocation = this.handleLocation.bind(this);
     // Above here
     this.handleLocationClick = this.handleLocationClick.bind(this);
     this.handleBusiness = this.handleBusiness.bind(this);
