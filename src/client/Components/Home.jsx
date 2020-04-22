@@ -90,26 +90,28 @@ class Home extends Component {
       newCondition: "",
       total: "",
       newId: 5,
-      newLocation: "",
+      newBusiness: "",
+      newPhone: "",
+
       // newAppraisal: Number
 
-      // phoneNumbers= [
-      //   {business: "Sozo Trading Co 4 41st St S, Birmingham, AL 35222",
-      //   phone: "(205) 703-0553"
-      //   },
-      //   {business: "Zoe Forest Park 3900 Clairmont Ave, Birmingham, AL 35222",
-      //   phone: "(205) 595-9049"
-      //   },
-      //   {business: "King's Home Thrift, 1569 Cooper Hill Rd, Irondale, AL 35210",
-      //   phone: "(205) 956-5658"
-      //   },
-      //   {business: "Fifty-Fifth Place / 5 55th Pl N, Birmingham, AL 35212 ",
-      //   phone: "(205) 591-4631"
-      //   },
-      //   {business: "Lovelady Thrift Store, 7720 Ludington Ln, Irondale, AL 35210",
-      //   phone: "(205) 951-9230"
-      //   }
-      // ]
+      phoneNumbers: [
+        {business: "Sozo Trading Co 4 41st St S, Birmingham, AL 35222",
+        phone: "(205) 703-0553"
+        },
+        {business: "Zoe Forest Park 3900 Clairmont Ave, Birmingham, AL 35222",
+        phone: "(205) 595-9049"
+        },
+        {business: "King's Home Thrift, 1569 Cooper Hill Rd, Irondale, AL 35210",
+        phone: "(205) 956-5658"
+        },
+        {business: "Fifty-Fifth Place, 5 55th Pl N, Birmingham, AL 35212 ",
+        phone: "(205) 591-4631"
+        },
+        {business: "Lovelady Thrift Store, 7720 Ludington Ln, Irondale, AL 35210",
+        phone: "(205) 951-9230"
+        }
+      ]
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -118,7 +120,15 @@ class Home extends Component {
     this.handleConditionInput = this.handleConditionInput.bind(this);
     this.addTotal = this.addTotal.bind(this);
     this.handleDeleteClick = this.handleDeleteClick.bind(this);
+    // Please check handleLocation to make sure it is propper. Below here
     this.handleLocation = this.handleLocation.bind(this);
+    // Above here
+    this.handleLocationClick = this.handleLocationClick.bind(this);
+    this.handleBusiness = this.handleBusiness.bind(this);
+    this.handlePhone = this.handlePhone.bind(this);
+
+
+
   }
 
   addTotal() {
@@ -143,7 +153,12 @@ class Home extends Component {
       model: this.state.newModel,
       condition: this.state.newCondition,
       id: this.state.newId++,
+      // Accepted both on merge conflict. Below
       newLocation: this.state.newLocation,
+      // business: this.state.business,
+      // phone: this.state.phone,
+
+      // newLocation: this.state.newLocation
       // appraisal: this.state.newAppraisal
     };
     this.setState({ itemStats: [...this.state.itemStats, newStats] }, () => {
@@ -164,10 +179,39 @@ class Home extends Component {
     this.setState({ newCondition: e.target.value });
   }
 
+<<<<<<< HEAD
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
 
+=======
+  // handleChange(e) {
+  //   this.setState({[e.target.name]: e.target.value})
+  // }
+
+  handleBusiness(e) {
+    this.setState({ newBusiness: e.target.value });
+    console.log(e.target.value);
+  }
+
+  handlePhone(e) {
+    this.setState({ newPhone: e.target.value });
+    console.log(newPhone[`${newBusiness.e.target.value}`]);
+  }
+
+  handleLocationClick() {
+    const newLocation = {
+      
+      business: this.state.newBusiness,
+      phone: this.state.newPhone,
+
+    };
+    this.setState({ phoneNumbers: [...this.state.phoneNumbers, newLocation] }, () => {
+      console.log(this.state.phoneNumbers);
+    });
+  }
+
+>>>>>>> 1b6a238079b2b8502017e77103477dbad02038c4
   handleDeleteClick = (cardId) => {
     const cards = this.state.itemStats.filter((item) => item.id !== cardId);
     this.setState({ itemStats: cards });
@@ -175,9 +219,6 @@ class Home extends Component {
     // alert("Say Something");
   };
 
-  handleLocation(e) {
-    this.setState({ newLocation: e.target.value });
-  }
 
   render() {
     return (
@@ -203,7 +244,9 @@ class Home extends Component {
             newCondition={this.state.newCondition}
             itemStats={this.state.itemStats}
             phoneNumbers={this.state.phoneNumbers}
-            handleLocation={this.handleLocation}
+            handleBusiness={this.handleBusiness}
+            handlePhone={this.handlePhone}
+
           />
           {/*name and zip input*/}
 
@@ -216,16 +259,24 @@ class Home extends Component {
             addTotal={this.addTotal}
           />
           {/* Pickup Loaction */}
+<<<<<<< HEAD
           <Location
             phoneNumbers={this.state.phoneNumbers}
             handleLocation={this.handleLocation}
           />
+=======
+          <Location handleLocationClick={this.handleLocationClick} handleBusiness={this.handleBusiness} handlePhone={this.handlePhone} phoneNumbers={this.state.phoneNumbers} />
+>>>>>>> 1b6a238079b2b8502017e77103477dbad02038c4
           {/* <CheckOut />*/}
           <CheckOut
             total={this.state.total}
             itemStats={this.state.itemStats}
             onDelete={this.handleDeleteClick}
-            handleLocation={this.handleLocation}
+            handlePhone={this.handlePhone}
+            handleBusiness={this.handleBusiness}
+            newBusiness={this.state.newBusiness}
+            newPhone={this.state.newPhone}
+            handleLocationClick={this.handleLocationClick}
             phoneNumbers={this.state.phoneNumbers}
           />
         </div>

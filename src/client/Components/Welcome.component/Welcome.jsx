@@ -88,7 +88,7 @@ class Welcome extends Component {
                     type="text"
                     name="zip code"
                     placeholder="Zip code"
-                    onChange={(event)=> this.props.handleLocation(event)}
+                    // onChange={(event)=> this.props.handleBusiness(event)}
                   />
                 </div>
               </div>

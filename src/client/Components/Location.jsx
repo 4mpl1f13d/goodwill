@@ -9,17 +9,21 @@ import {
 
 
 export class Location extends Component {
-  state = {
-    open: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  // state = {
+  //   open: false,
+  // };
 
-  handleButtonClick = () => {
-    this.setState((state) => {
-      return {
-        open: !state.open,
-      };
-    };
-    });
+  // handleButtonClick = () => {
+  //   this.setState((state) => {
+  //     return {
+  //       open: !state.open,
+  //     };
+  //   };
+  //   });
 
 
   render() {
@@ -70,12 +74,12 @@ export class Location extends Component {
                 <Form.Label style={{ color: "black" }}>
                   Select Store:
                 </Form.Label>
-                <Form.Control as="select" custom>
-                  {/* <option>1. `${this.phoneNumbers.business[0]}` </option>
-                  <option>2. `${this.phoneNumbers.business[1]}` </option>
-                  <option>3. `${this.phoneNumbers.business[2]}` </option>
-                  <option>4. `${this.phoneNumbers.business[3]}` </option>
-                  <option>5. `${this.phoneNumbers.business[4]}` </option> */}
+                <Form.Control as="select" custom onChange={(event)=> this.props.handleBusiness(event)} >
+                  <option>1. {this.props.phoneNumbers[0].business}</option>
+                  <option>2. {this.props.phoneNumbers[1].business}</option>
+                  <option>3. {this.props.phoneNumbers[2].business}</option>
+                  <option>4. {this.props.phoneNumbers[3].business}</option>
+                  <option>5. {this.props.phoneNumbers[4].business}</option>
                 </Form.Control>
               </Form.Group>
             </Form>
@@ -106,7 +110,7 @@ export class Location extends Component {
                   type="button"
                   className="btn btn-success btn-md"
                   style={{ width: "100px" }}
-                  onClick={() => this.props.handleLocation()}
+                  onClick={() => this.props.handlePhone()}
                 >
                   {" "}
                   Save
