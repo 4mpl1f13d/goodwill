@@ -67,8 +67,8 @@ class Home extends Component {
  // galleryURL as opacity background on card (https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg
 
         {
-          make: "New Balance",
-          model: "MX517v1",
+          make: "Hitachi",
+          model: "H2T500854S",
           condition: "Used",
           appraisal: 19,
           id: 4,
