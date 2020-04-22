@@ -10,7 +10,6 @@ class Welcome extends Component {
     return (
       <section
         id="top"
-        className="mute"
         // className="one dark cover"
         style={{
           backgroundImage:
@@ -20,9 +19,10 @@ class Welcome extends Component {
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+          width: "auto",
         }}
       >
-        <div className="container">
+        <div className="top container">
           <header>
             <h1>Find the value of your item</h1>
             <p className="text-white">
@@ -56,7 +56,12 @@ class Welcome extends Component {
 
               <div className="row">
                 <div className="col-4 col-12-mobile">
-                  <select className="" name="condition" id="condition" onChange={(event)=> this.props.handleConditionInput(event)}>
+                  <select
+                    className=""
+                    name="condition"
+                    id="condition"
+                    onChange={(event) => this.props.handleConditionInput(event)}
+                  >
                     <option selected="selected">Condition</option>
                     <option id="condition-broke" value="Broken">
                       Broken

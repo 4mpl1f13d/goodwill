@@ -8,6 +8,20 @@
 */
 
 /* Here*/
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.myImage {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url("../../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  justify-content: right;
+}
 
 .red {
   color: rgb(231, 74, 74);
@@ -2179,12 +2193,10 @@ button:active,
   box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
   color: #fff;
   height: 100%;
-  left: 0;
   overflow-y: auto;
   position: fixed;
   text-align: right;
-  top: 0;
-  width: 375px;
+  width: 100px;
 }
 
 #header .top {
@@ -2192,6 +2204,7 @@ button:active,
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
   flex-grow: 1;
+  width: 200px;
 }
 
 #header .bottom {

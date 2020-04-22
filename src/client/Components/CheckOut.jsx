@@ -12,78 +12,85 @@ class CheckOut extends Component {
     return (
       <React.Fragment>
         {/* Shopping cart table */}
-        <div id="checkOut" className="one cover" style={{ backgroundColor: "#fff" }}>
+        <div
+          id="checkOut"
+          className="one cover"
+          style={{ backgroundColor: "#fff" }}
+        >
           <div className="row">
             <h1 style={{ color: "#333", padding: "2em" }}>
               Goodwill Donation Summary
             </h1>
           </div>
-          <table className="container">
-            <thead>
-              <tr>
-                <th scope="col" className="border-0 bg-dark">
-                  <div className="p-2 px-3 text-uppercase">Product</div>
-                </th>
-                <th scope="col" className="border-0 bg-dark">
-                  <div className="py-2 text-uppercase">
-                    Estimated Tax Value
-                  </div>
-                </th>
-                {/* <th scope="col" className="border-0 bg-dark">
-                  <div className="py-2 text-uppercase">Quantity</div>
-                </th> */}
-                <th scope="col" className="border-0 bg-dark">
+          <div className="one cover flex-container">
+            <table className="table table-striped content">
+              <thead>
+                <tr>
+                  <th scope="col" className="border-0 bg-dark">
+                    <div className="p-2 px-3 text-uppercase">Product</div>
+                  </th>
+                  <th scope="col" className="border-0 bg-dark">
+                    <div className="py-2 text-uppercase">
+                      Estimated Tax Savings
+                    </div>
+                  </th>
+                  <th scope="col" className="border-0 bg-dark">
+                    <div className="py-2 text-uppercase">Quantity</div>
+                  </th>
+                  <th scope="col" className="border-0 bg-dark">
+                    <div className="py-2 text-uppercase">Remove</div>
+                  </th>
+                </tr>
+              </thead>
 
-                  <div className="py-2 text-uppercase">Remove</div>
-                </th>
-              </tr>
-            </thead>
-
-            {/*Table*/}
-            <tbody>
-              {this.props.itemStats.map((item, id) => {
-                return (
-                  <tr>
-                    <th scope="row" style={{ backgroundColor: "#A9A9A9",
-                  borderTop: "solid .1px #fff", marginTop: "0" }}>
-                      <div className="p-2">
-                        <img
-                          src="https://source.unsplash.com/random/50x50"
-                          alt
-                          width={70}
-                          className="img-fluid rounded shadow-sm"
-                        />
-                        <br />
-                        <div className="ml-3 d-inline-block align-middle">
-                          <h5 className="mb-0">
-                            {" "}
-                            <a href="#" className="text-light d-inline-block">
-                              {item.make} {item.model}
-                            </a>
-                          </h5>
-                          <span className="text-muted font-weight-normal font-italic">
-                            {item.condition}
-                          </span>
+              {/*Table*/}
+              <tbody>
+                {this.props.itemStats.map((item, id) => {
+                  return (
+                    <tr>
+                      <th scope="row" style={{ backgroundColor: "#A9A9A9" }}>
+                        <div className="p-2">
+                          <img
+                            src="https://source.unsplash.com/random/50x50"
+                            alt
+                            width={70}
+                            className="img-fluid rounded shadow-sm"
+                            style={{ margin: "10px" }}
+                          />
+                          <br />
+                          <div className="ml-3 d-inline-block align-middle">
+                            <h5 className="mb-0">
+                              {" "}
+                              <a href="#" className="text-light d-inline-block">
+                                {item.make} {item.model}
+                              </a>
+                            </h5>
+                            <span className="text-muted font-weight-normal font-italic">
+                              {item.condition}
+                            </span>
+                          </div>
                         </div>
-                      </div>
-                    </th>
-                    <td className="d-flex justify-content-center">
-                      <strong>${item.appraisal}</strong>
-                    </td>
-                    {/* <td className="align-middle">
-                      <strong>{id}</strong>
-                    </td> */}
-                    <td className="align-middle">
-                      <a href="#" className="text-light" onClick={() => this.props.onDelete(item.id)}>
-                        <i className="fa fa-trash" style={{color: "#A9A9A9"}} />
-                      </a>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-
+                      </th>
+                      <td className="align-middle">
+                        <strong>${item.appraisal}.00</strong>
+                      </td>
+                      <td className="align-middle">
+                        <strong>{id}</strong>
+                      </td>
+                      <td className="align-middle">
+                        <a href="#" className="text-light">
+                          <i
+                            className="fa fa-trash"
+                            style={{ color: "#A9A9A9" }}
+                          />
+                        </a>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
           {/* End */}
 
           <div className="row py-5 p-4 bg-white rounded shadow-sm">

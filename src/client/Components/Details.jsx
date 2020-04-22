@@ -84,7 +84,6 @@ export class Details extends Component {
                         >
                           <i className="fa fa-trash"></i> 
                         </button>
-
                       </Card.Body>
                     </Card>
                   </div>

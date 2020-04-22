@@ -11,9 +11,8 @@ class NavBar extends Component {
       <div id="header">
         <div className="top">
           {/* Logo */}
-          <div id="logo">
-            <h1 id="title">DONATOR</h1>
-            <p>Value generator</p>
+          <div id="logo" className="flex-container">
+            <h1 className="myImage" id="title"></h1>
           </div>
           {/* Nav */}
           <nav id="nav">
@@ -52,25 +51,11 @@ class NavBar extends Component {
           {/* Social Icons */}
           <ul className="icons">
             <li>
-              <a href="#" className="icon brands fa-twitter">
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="icon brands fa-facebook-f">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
               <a href="#" className="icon brands fa-github">
                 <span className="label">Github</span>
               </a>
             </li>
-            <li>
-              <a href="#" className="icon brands fa-dribbble">
-                <span className="label">Dribbble</span>
-              </a>
-            </li>
+
             <li>
               <a href="#" className="icon solid fa-envelope">
                 <span className="label">Email</span>
