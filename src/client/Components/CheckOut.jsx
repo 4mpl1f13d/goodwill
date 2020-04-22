@@ -1,5 +1,5 @@
 import React, { Component, ReactFragment } from "react";
-import phoneNumbers from './Location';
+import phoneNumbers from "./Location";
 import e from "express";
 
 class CheckOut extends Component {
@@ -37,7 +37,6 @@ class CheckOut extends Component {
                   {/* <th scope="col" className="border-0 bg-dark">
                     <div className="py-2 text-uppercase">Quantity</div>
     </th>*/}
-                 
                   <th scope="col" className="border-0 bg-dark">
                     <div className="py-2 text-uppercase">Remove</div>
                   </th>
@@ -74,7 +73,6 @@ class CheckOut extends Component {
                       <td className="d-flex justify-content-center">
                         <strong>${item.appraisal}.00</strong>
                       </td>
-<<<<<<< HEAD
                       {/*<td className="align-middle">
                         <strong>{id}</strong>
                   </td>*/}
@@ -82,12 +80,6 @@ class CheckOut extends Component {
                         className="align-middle"
                         style={{ paddingLeft: "2em" }}
                       >
-=======
-                      {/* <td className="align-middle">
-                        <strong>{id}</strong>
-                      </td> */}
-                      <td className="align-middle">
->>>>>>> 1b6a238079b2b8502017e77103477dbad02038c4
                         <a href="#" className="text-light">
                           <i
                             className="fa fa-trash"
@@ -111,7 +103,7 @@ class CheckOut extends Component {
 
               <div className="p-2">
                 <div className="ml-3 d-inline-block align-middle">
-            <h5 className="mb-0">{this.props.handleBusiness}</h5>
+                  <h5 className="mb-0">{this.props.handleBusiness}</h5>
                   <span className="text-muted font-weight-normal font-italic d-block">
                     {this.props.newBusiness}
                   </span>
@@ -156,7 +148,10 @@ class CheckOut extends Component {
                     <strong>$0.00</strong>
                   </li> */}
                   <li className="d-flex justify-content-between py-3 border-bottom">
-                    <strong className="text-muted"> Estimated Value Reclaimed </strong>
+                    <strong className="text-muted">
+                      {" "}
+                      Estimated Value Reclaimed{" "}
+                    </strong>
 
                     <strong>${this.props.total}.00</strong>
                   </li>
