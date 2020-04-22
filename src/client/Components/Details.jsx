@@ -10,7 +10,7 @@ export class Details extends Component {
       newModel: props.newModel,
       newCondition: props.newCondition,
       newAppraisal: props.newAppraisal,
-
+      total: props.total,
     };
   }
 
@@ -62,7 +62,6 @@ export class Details extends Component {
                         >
                           <i className="fa fa-trash"></i> Delete{" "}
                         </button>
-
                       </Card.Body>
                     </Card>
                   </div>

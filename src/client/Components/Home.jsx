@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import NavBar from "./NavBar";
-import Welcome from "./Welcome";
+import Welcome from "./Welcome.component/Welcome";
 import Details from "./Details";
 import Location from "./Location";
 import CheckOut from "./CheckOut";
@@ -152,11 +152,13 @@ class Home extends Component {
           <Details
             itemStats={this.state.itemStats}
             onDelete={this.handleDeleteClick}
+            addTotal={this.addTotal}
           />
           {/* Pickup Loaction */}
           <Location />
           {/* <CheckOut />*/}
           <CheckOut
+            total={this.state.total}
             itemStats={this.state.itemStats}
             onDelete={this.handleDeleteClick}
           />
