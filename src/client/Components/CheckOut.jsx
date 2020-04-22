@@ -1,5 +1,6 @@
 import React, { Component, ReactFragment } from "react";
 import phoneNumbers from './Location';
+import e from "express";
 
 class CheckOut extends Component {
   constructor(props) {
@@ -88,30 +89,30 @@ class CheckOut extends Component {
           <div className="row py-5 p-4 bg-white rounded shadow-sm">
             <div className="col-lg-6">
               <div className="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
-                Selected GoodWill Location
+                Selected Thrift Store Location
               </div>
 
               <div className="p-2">
                 <div className="ml-3 d-inline-block align-middle">
-                  <h5 className="mb-0">GoodWill Hoover</h5>
+            <h5 className="mb-0">{this.props.handleBusiness}</h5>
                   <span className="text-muted font-weight-normal font-italic d-block">
-                    {this.props.handleLocation}
+                    {this.props.newBusiness}
                   </span>
-                  {/* {this.props.phoneNumbers.phone} */}
+                  {this.props.newPhone}
                 </div>
               </div>
               <div className="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
                 Instructions for GoodWill pickup team
               </div>
               <div className="p-4">
-                <p className="font-italic mb-4">
+                {/* <p className="font-italic mb-4">
                   If you have some information for the donation pick up team you
                   can leave them in the box below
-                </p>
+                </p> */}
                 <textarea
                   name
                   cols={30}
-                  rows={2}
+                  rows={4}
                   className="form-control"
                   defaultValue={""}
                 />
@@ -131,14 +132,14 @@ class CheckOut extends Component {
                     <strong className="text-muted">Order Subtotal </strong>
                     <strong>${this.props.total}.00</strong>
                   </li>
-                  <li className="d-flex justify-content-between py-3 border-bottom">
+                  {/* <li className="d-flex justify-content-between py-3 border-bottom">
                     <strong className="text-muted">
-                      Estimated Tax Savings
+                      Total
                     </strong>
                     <strong>$0.00</strong>
-                  </li>
+                  </li> */}
                   <li className="d-flex justify-content-between py-3 border-bottom">
-                    <strong className="text-muted">Total</strong>
+                    <strong className="text-muted"> Estimated Value Reclaimed </strong>
 
                     <strong>${this.props.total}.00</strong>
                   </li>
@@ -147,7 +148,7 @@ class CheckOut extends Component {
                   href="#"
                   className="btn btn-dark rounded-pill py-2 btn-block"
                 >
-                  Submit Your Items &amp; Download Your Receipt
+                  Print Your Donation Receipt
                 </a>
               </div>
             </div>
