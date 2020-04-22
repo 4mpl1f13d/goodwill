@@ -34,9 +34,9 @@ class CheckOut extends Component {
                       Estimated Tax Savings
                     </div>
                   </th>
-                  <th scope="col" className="border-0 bg-dark">
+                  {/* <th scope="col" className="border-0 bg-dark">
                     <div className="py-2 text-uppercase">Quantity</div>
-                  </th>
+                  </th> */}
                   <th scope="col" className="border-0 bg-dark">
                     <div className="py-2 text-uppercase">Remove</div>
                   </th>
@@ -71,12 +71,12 @@ class CheckOut extends Component {
                           </div>
                         </div>
                       </th>
-                      <td className="align-middle">
+                      <td className="d-flex justify-content-center">
                         <strong>${item.appraisal}.00</strong>
                       </td>
-                      <td className="align-middle">
+                      {/* <td className="align-middle">
                         <strong>{id}</strong>
-                      </td>
+                      </td> */}
                       <td className="align-middle">
                         <a href="#" className="text-light">
                           <i
