@@ -28,18 +28,12 @@ export class Details extends Component {
               <h4>List Items</h4>
             </div>
             <div
-              className="col-12"
-              style={{
-                overflowX: "scroll",
-                overflowY: "hidden",
-                whiteSpace: "nowrap",
-              }}
-            >
-              {this.props.itemStats.map((item, id) => {
+              className="col-12">
+              {this.props.itemStats.map((item) => {
                 return (
-                  <div className="d-inline-block mx-2 my-2" key={id}>
-                    <Card border="success" style={{ width: "14rem" }}>
-                      <Card.Header>{counter++}</Card.Header>
+                  <div className="d-inline-block mx-2 my-2" key={item.id}>
+                    <Card border="success" style={{ width: "12rem" }}>
+                      <Card.Header style={{height: '35px'}}>{counter++}</Card.Header>
                       <Card.Body>
                         <Card.Title>
                           {item.make} {item.model}
@@ -47,20 +41,24 @@ export class Details extends Component {
                         <div className="d-flex justify-content-center">
                           <Card.Text>
                             {item.condition}
+                            <div className="d-flex justify-content-center">
+                            $
                             <input
                               className="form-control my-2 text-center"
                               type="text"
-                              placeholder={item.appraisal}
-                              style={{ width: "100px" }}
+                              placeholder= {item.appraisal}
+                              style={{ width: "100px", height: '20px' }}
                               readOnly
                             />
+                            </div>
                           </Card.Text>
                         </div>
                         <button
-                          className="btn btn-danger btn-sm"
-                          style={{ width: "95px", height: "30px" }}
+                          className="btn btn-outline-danger btn-sm"
+                          style={{ width: "50px", height: "25px" }}
+                          onClick={() => this.props.onDelete(item.id)}
                         >
-                          <i className="fa fa-trash"></i> Delete{" "}
+                          <i className="fa fa-trash"></i> 
                         </button>
 
                       </Card.Body>
@@ -70,23 +68,20 @@ export class Details extends Component {
               })}
             </div>
 
-            <div className="d-flex justify-content-center my-1">
+          </div>
+        </div>
+
+        <div className="row my-3" id="details">
+          <div className="col-4 col-12-mobile">
+            <div className="col-12 d-flex justify-content-between">
               <button
                 href="#top"
                 type="button"
                 className="btn btn-outline-warning btn-md scrolly"
                 style={{ width: "100px" }}
               >
-                {" "}
                 + Add
               </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="row my-3" id="details">
-          <div className="col-4 col-12-mobile">
-            <div className="col-12">
               <a
                 href="#about"
                 className="button scrolly"

@@ -26,7 +26,7 @@ class Welcome extends Component {
           <header>
             <h1>Find the value of your item</h1>
             <p className="text-white">
-              Enter in the details and we we'll do the work
+              Enter the details and we'll do the work
             </p>
           </header>
           <footer>
