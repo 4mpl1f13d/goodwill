@@ -13,27 +13,65 @@ class Home extends Component {
   constructor(props) {
     super(props);
 
+ // EX id = searchid AKA UID (DKVhKVCsR3JUemibU45rhq)/ item.make = hp / item.model = dv7-6b55 laptop (keywords=hp dv7-6b55 laptop&) / 
+ // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $80.8
+ // galleryURL as opacity background on card (https://thumbs2.ebaystatic.com/m/mdynTPmeixZC3K09ywiaDdQ/140.jpg
+
     this.state = {
       itemStats: [
         {
-          make: "Sony Xperia",
-          model: "l3123",
+          make: "HP laptop",
+          model: "dv7-6b55",
           condition: "Used",
-          appraisal: 300,
+          appraisal: 81,
           id: 0,
         },
+
+ // EX id = searchid AKA UID (A5yUFngruhCZvg4L4ire4v)/ item.make = Vizio / item.model = D24h-C1& (keywords=Vizio D24h-C1&) / 
+ // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $34.9
+ // galleryURL as opacity background on card (https://thumbs3.ebaystatic.com/m/mcZoJz1WghKRxvmK3uMFRNg/140.jpg
+
         {
-          make: "Fire 10",
-          model: "UX347",
-          condition: "New",
-          appraisal: 150,
+          make: "Vizio",
+          model: "D24h-C1&",
+          condition: "Used",
+          appraisal: 35,
           id: 1,
         },
+
+ // EX id = searchid AKA UID (3tEUHTyExcgomwjmYZYP3Y)/ item.make = New Balance / item.model = MX517v1 (keywords=New Balance MX517v1&) / 
+ // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $29.5
+ // galleryURL as opacity background on card (https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg
+
         {
-          make: "Fire 7",
-          model: "UM926",
+          make: "New Balance",
+          model: "MX517v1",
           condition: "Used",
-          appraisal: 25,
+          appraisal: 30,
+          id: 2,
+        },
+
+ // EX id = searchid AKA UID (HtjmJtDLGoRLvWKzkyUGmX)/ item.make = hitachi / item.model = H2T500854S (keywords=corsair k95 rgb keyboard&)
+ // item.condition = grade (1000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $147.6
+ // galleryURL as opacity background on card (https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg
+
+        {
+          make: "corsair keyboard",
+          model: "k95 rgb",
+          condition: "New",
+          appraisal: 148,
+          id: 2,
+        },
+
+// EX id = searchid AKA UID (T1GVa4oTENMW2R2A6fB4pu)/ item.make = hitachi / item.model = H2T500854S (keywords=hitachi H2T500854S&)
+ // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $18.6
+ // galleryURL as opacity background on card (https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg
+
+        {
+          make: "New Balance",
+          model: "MX517v1",
+          condition: "Used",
+          appraisal: 19,
           id: 2,
         },
       ],
@@ -75,7 +113,7 @@ class Home extends Component {
       make: this.state.newMake,
       model: this.state.newModel,
       condition: this.state.newCondition,
-      id: this.state.newId,
+      id: this.state.newId++,
       // appraisal: this.state.newAppraisal
     };
     this.setState({ itemStats: [...this.state.itemStats, newStats] }, () => {

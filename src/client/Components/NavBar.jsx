@@ -12,7 +12,7 @@ class NavBar extends Component {
         <div className="top">
           {/* Logo */}
           <div id="logo">
-            <h1 id="title">Donation App</h1>
+            <h1 id="title">DONATOR</h1>
             <p>Value generator</p>
           </div>
           {/* Nav */}

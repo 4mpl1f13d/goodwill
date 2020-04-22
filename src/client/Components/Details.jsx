@@ -1,6 +1,30 @@
 import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 
+// // Server Calls to Backend to populate values from DB
+// import fetch from 'node-fetch';
+// import * as mysql from "mysql";
+// import UID from '../server/services/';
+// import credentials from '../config/credentials';
+// const fs = require('fs');
+
+// // MySQL Connection
+// var connection = mysql.createConnection({
+//   host: 'localhost',
+//   user: credentials.mysql.user,
+//   password: credentials.mysql.password,
+//   database: credentials.mysql.database
+// });
+
+ // EX id = searchid AKA UID (DKVhKVCsR3JUemibU45rhq)/ item.make = hp / item.model = dv7-6b55 laptop (keywords=hp dv7-6b55 laptop&) / 
+ // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $80.8
+ // galleryURL as opacity background on card (https://thumbs2.ebaystatic.com/m/mdynTPmeixZC3K09ywiaDdQ/140.jpg)
+
+// fs.readFile(select * mysql.dona8tr.ebayfoos){
+//   let id=dona8tr.ebayfoo.searchid;
+//   let `${item.condition}`=dona8tr.ebayfoo.grade;
+// }; 
+
 export class Details extends Component {
   constructor(props) {
     super(props);
@@ -10,7 +34,6 @@ export class Details extends Component {
       newModel: props.newModel,
       newCondition: props.newCondition,
       newAppraisal: props.newAppraisal,
-
     };
   }
 
@@ -37,8 +60,9 @@ export class Details extends Component {
             >
               {this.props.itemStats.map((item, id) => {
                 return (
-                  <div className="d-inline-block mx-2 my-2" key={id}>
-                    <Card border="success" style={{ width: "14rem" }}>
+
+                 <div className="d-inline-block mx-2 my-2" key={id}>
+                    <Card background src ="galleryURL"  border="success" style={{ width: "14rem" }}>
                       <Card.Header>{counter++}</Card.Header>
                       <Card.Body>
                         <Card.Title>

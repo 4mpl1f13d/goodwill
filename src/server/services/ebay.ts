@@ -47,8 +47,8 @@ export const searchEbay = () => {
 }
 
 const
-    // hard-coded condition.
-    condition: number = 3000,
+    // hard-coded condition 1000 New | 3000 Used | 7000 Broke
+    condition: number = 1000,
     // base url (points to ebay get).
     baseURL: string = "https://svcs.ebay.com/services/search/FindingService/v1?",
     // the api call.
@@ -62,7 +62,7 @@ const
     // payload:
     payload: string = "REST-PAYLOAD" + "&",
     // keywords (search terms). --  Used  / hp dv7-6b55 laptop / New Balance MX517v1 / corsair k95 rgb keyboard rgp0056 / Vizio D24h-C1
-    keywords: string = "keywords=" + "hitachi H2T500854S" + "&",
+    keywords: string = "keywords=" + "corsair k95 rgb keyboard" + "&",
     // item filters.
     itemFilter0: string = "itemFilter(0)" + ".name=" + "SoldItemsOnly" + "&" + "itemFilter(0)" + ".value=" + "true" + "&",
     itemFilter1: string = "itemFilter(1)" + ".name=" + "Condition" + "&" + "itemFilter(1)" + ".value=" + condition + "&",

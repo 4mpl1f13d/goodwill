@@ -2,7 +2,6 @@ import * as express from 'express';
 import * as  google from './services/google';
 import * as  ebay from './services/ebay';
 
-
 const router = express.Router();
 
 router.get('/hello', (req, res, next) => {
