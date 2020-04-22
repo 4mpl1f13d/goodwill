@@ -69,11 +69,11 @@ export class Location extends Component {
                   Select Store:
                 </Form.Label>
                 <Form.Control as="select" custom>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                  <option>1. 1800 5th Ave North Birmingham, AL 35203 </option>
+                  <option>2. 5113 Oporto Madrid Blvd South Irondale, AL 35210</option>
+                  <option>3. 3310 Pelham Pkwy Pelham, AL 35124</option>
+                  <option>4. Park Rd East Pleasant Grove, AL 35127</option>
+                  <option>5. 1288 Forestdale Sq Birmingham,AL 35234</option>
                 </Form.Control>
               </Form.Group>
             </Form>

@@ -7,7 +7,6 @@ import CheckOut from "./CheckOut";
 import Footer from "./Footer";
 import NameZip from "./NameZip";
 import CheckOut from "./CheckOut";
-import { Alert } from "react-alert";
 
 class Home extends Component {
   constructor(props) {
@@ -20,8 +19,13 @@ class Home extends Component {
     this.state = {
       itemStats: [
         {
+<<<<<<< HEAD
           make: "HP laptop",
           model: "dv7-6b55",
+=======
+          make: "Sony Xp.",
+          model: "l3123",
+>>>>>>> cardupdateDelete
           condition: "Used",
           appraisal: 81,
           id: 0,
@@ -90,6 +94,8 @@ class Home extends Component {
     this.handleConditionInput = this.handleConditionInput.bind(this);
     this.addTotal = this.addTotal.bind(this);
     this.handleDeleteClick = this.handleDeleteClick.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+
   }
 
   addTotal() {
@@ -119,7 +125,7 @@ class Home extends Component {
     this.setState({ itemStats: [...this.state.itemStats, newStats] }, () => {
       console.log(this.state.itemStats);
     });
-    this.setState({ newId: this.state.newId++ });
+    // this.setState({ newId: this.state.newId++ });
   }
 
   handleMakeInput(e) {
@@ -134,26 +140,11 @@ class Home extends Component {
     this.setState({ newCondition: e.target.value });
   }
 
-  //   onDelete(id) {
-  //     deleteItemStats(id)
-  //         .then((data) => {
-  //             let itemStats = this.state.itemStats.filter((card) => {
-  //                 return id !== card.id;
-  //             });
+  handleChange(e) {
+    this.setState({[e.target.name]: e.target.value})
+  }
 
-  //             this.setState(state => {
-  //                 state.itemStats = itemStats;
-  //                 return state;
-  //             });
-  //         })
-  //         .catch((err) => {
-  //             console.error('err', err);
-  //         });
-  // }
 
-  // handleDeleteClick = () => {
-  //   alert('Button Clicked!');
-  // }
   handleDeleteClick = (cardId) => {
     const cards = this.state.itemStats.filter((item) => item.id !== cardId);
     this.setState({ itemStats: cards });
@@ -179,6 +170,7 @@ class Home extends Component {
             handleMakeInput={this.handleMakeInput}
             handleModelInput={this.handleModelInput}
             handleClick={this.handleClick}
+            handleChange={this.handleChange}
             newMake={this.state.newMake}
             newModel={this.state.newModel}
             newCondition={this.state.newCondition}
@@ -194,7 +186,7 @@ class Home extends Component {
             onDelete={this.handleDeleteClick}
           />
           {/* Pickup Loaction */}
-          <Location />
+          <Location handleChange={this.handleChange} />
           {/* <CheckOut />*/}
           <CheckOut
             total={this.state.total}

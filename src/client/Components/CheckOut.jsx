@@ -72,7 +72,7 @@ class CheckOut extends Component {
                       <strong>{id}</strong>
                     </td>
                     <td className="align-middle">
-                      <a href="#" className="text-light">
+                      <a href="#" className="text-light" onClick={() => this.props.onDelete(item.id)}>
                         <i className="fa fa-trash" style={{color: "#A9A9A9"}} />
                       </a>
                     </td>
