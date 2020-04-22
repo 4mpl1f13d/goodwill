@@ -61,8 +61,8 @@ class Home extends Component {
         // galleryURL as opacity background on card (https://thumbs4.ebaystatic.com/m/m4KALgx3WrfGHcivB28aCpA/140.jpg
 
         {
-          make: "corsair keyboard",
-          model: "k95 rgb",
+          make: "Corsair keyboard",
+          model: "k95 rgb", 
           condition: "New",
           appraisal: 148,
           id: 3,

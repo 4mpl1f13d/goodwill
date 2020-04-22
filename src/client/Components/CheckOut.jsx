@@ -10,7 +10,7 @@ class CheckOut extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <React.Fragment id="printMe">
         {/* Shopping cart table */}
         <div
           id="checkOut"
@@ -159,6 +159,7 @@ class CheckOut extends Component {
                 <a
                   href="#"
                   className="btn btn-dark rounded-pill py-2 btn-block"
+                  onClick={() =>window.print()}
                 >
                   Print Your Donation Receipt
                 </a>
