@@ -7,6 +7,7 @@ import {
   ControlLabel,
 } from "react-bootstrap";
 
+
 export class Location extends Component {
   state = {
     open: false,
@@ -17,8 +18,9 @@ export class Location extends Component {
       return {
         open: !state.open,
       };
+    };
     });
-  };
+
 
   render() {
     return (
@@ -52,7 +54,7 @@ export class Location extends Component {
               <h4 style={{ color: "black" }}>Choose Your Goodwill Store</h4>
             </div>
 
-            <div className="d-flex justify-content-start align-items-center my-4">
+            {/* <div className="d-flex justify-content-start align-items-center my-4">
               <h6 style={{ color: "black" }}>Zipcode:</h6>
               <input
                 className="text-center mx-2"
@@ -60,7 +62,7 @@ export class Location extends Component {
                 placeholder="Zipcode"
                 style={{ width: "160px" }}
               />
-            </div>
+            </div> */}
 
             {/* Dropdown selection code */}
             <Form>
@@ -69,11 +71,11 @@ export class Location extends Component {
                   Select Store:
                 </Form.Label>
                 <Form.Control as="select" custom>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                  {/* <option>1. `${this.phoneNumbers.business[0]}` </option>
+                  <option>2. `${this.phoneNumbers.business[1]}` </option>
+                  <option>3. `${this.phoneNumbers.business[2]}` </option>
+                  <option>4. `${this.phoneNumbers.business[3]}` </option>
+                  <option>5. `${this.phoneNumbers.business[4]}` </option> */}
                 </Form.Control>
               </Form.Group>
             </Form>
@@ -104,6 +106,7 @@ export class Location extends Component {
                   type="button"
                   className="btn btn-success btn-md"
                   style={{ width: "100px" }}
+                  onClick={() => this.props.handleLocation()}
                 >
                   {" "}
                   Save
@@ -123,4 +126,5 @@ export class Location extends Component {
   }
 }
 
-export default Location;
+export default Location
+

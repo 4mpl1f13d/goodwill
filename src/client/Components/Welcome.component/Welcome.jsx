@@ -26,7 +26,7 @@ class Welcome extends Component {
           <header>
             <h1>Find the value of your item</h1>
             <p className="text-white">
-              Enter in the details and we we'll do the work
+              Enter in the details and we we'll do the work...
             </p>
           </header>
           <footer>
@@ -88,6 +88,7 @@ class Welcome extends Component {
                     type="text"
                     name="zip code"
                     placeholder="Zip code"
+                    onChange={(event)=> this.props.handleLocation(event)}
                   />
                 </div>
               </div>

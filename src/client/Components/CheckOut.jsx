@@ -1,4 +1,5 @@
 import React, { Component, ReactFragment } from "react";
+import phoneNumbers from './Location';
 
 class CheckOut extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class CheckOut extends Component {
         >
           <div className="row">
             <h1 style={{ color: "#333", padding: "2em" }}>
-              Goodwill tax results
+              Goodwill Donation Summary
             </h1>
           </div>
           <div className="one cover flex-container">
@@ -101,9 +102,9 @@ class CheckOut extends Component {
                 <div className="ml-3 d-inline-block align-middle">
                   <h5 className="mb-0">GoodWill Hoover</h5>
                   <span className="text-muted font-weight-normal font-italic d-block">
-                    6215 Tattersall Blvd Unit 105, Hoover, AL 35242
+                    {this.props.handleLocation}
                   </span>
-                  (205) 403-6114 M-F 10-8PM
+                  {/* {this.props.phoneNumbers.phone} */}
                 </div>
               </div>
               <div className="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">

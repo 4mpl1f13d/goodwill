@@ -3,10 +3,11 @@ import * as mysql from "mysql";
 import UID from './uid';
 import credentials from '../config/credentials';
 const fs = require('fs');
-const ebayUID = UID;
+
+export const ebayUID = UID;
 
 // Test Write data to ebay.JSON
-const jsonEbay = () => {
+export const jsonEbay = () => {
     fetch(fullE_URL)
         .then(res => res.text())
         .then(body => writeEbay(body))
@@ -27,15 +28,17 @@ var connection = mysql.createConnection({
 });
 
 // import rest api data to create a new google records into mysql database - Update ebayfoos table
-export const searchEbay = () => {
+export const searchEbay = () => { 
     fetch(fullE_URL)
         .then(res => res.json())
         .then(body => {
+            const itemCount= body.findCompletedItemsResponse[0].paginationOutput[0].totalEntries;
+            console.log(itemCount);
             // console.log(body);
             body.findCompletedItemsResponse[0].searchResult[0].item.forEach(element => {
                 // DB info on top, JSON table info on bottom
-                connection.query(`insert into ebayfoos(searchid, keywords, grade, marketvalue, galleryURL) values
-                (?, ?, ?, ?, ?)`, [ebayUID, keywords, element.condition[0].conditionId, element.sellingStatus[0].convertedCurrentPrice[0].__value__, element.galleryURL[0]], function (error, results, fields) {
+                connection.query(`insert into ebayfoos(searchid, keywords, grade, marketvalue, itemcount, galleryURL) values
+                (?, ?, ?, ?, ?, ?)`, [ebayUID, keywords, element.condition[0].conditionId, element.sellingStatus[0].convertedCurrentPrice[0].__value__, itemCount, element.galleryURL[0]], function (error, results, fields) {
                     if (error) throw error;
                 });
             });
@@ -44,8 +47,8 @@ export const searchEbay = () => {
 }
 
 const
-    // hard-coded condition.
-    condition: number = 3000,
+    // hard-coded condition 1000 New | 3000 Used | 7000 Broke
+    condition: number = 1000,
     // base url (points to ebay get).
     baseURL: string = "https://svcs.ebay.com/services/search/FindingService/v1?",
     // the api call.
@@ -58,8 +61,8 @@ const
     dataFormat: string = "RESPONSE-DATA-FORMAT=" + "JSON" + "&",
     // payload:
     payload: string = "REST-PAYLOAD" + "&",
-    // keywords (search terms). --  Used  / hp dv7-6b55 laptop / New Balance Men's MX517v1 Training Shoe 
-    keywords: string = "keywords=" + "New Balance MX517v1" + "&",
+    // keywords (search terms). --  Used  / hp dv7-6b55 laptop / New Balance MX517v1 / corsair k95 rgb keyboard rgp0056 / Vizio D24h-C1
+    keywords: string = "keywords=" + "corsair k95 rgb keyboard" + "&",
     // item filters.
     itemFilter0: string = "itemFilter(0)" + ".name=" + "SoldItemsOnly" + "&" + "itemFilter(0)" + ".value=" + "true" + "&",
     itemFilter1: string = "itemFilter(1)" + ".name=" + "Condition" + "&" + "itemFilter(1)" + ".value=" + condition + "&",
@@ -75,6 +78,7 @@ const
 // exports.
 export default {
     fullE_URL,
+    jsonEbay,
     searchEbay,
 }
 
