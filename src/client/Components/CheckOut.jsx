@@ -131,14 +131,14 @@ class CheckOut extends Component {
               </div>
               <div className="p-4">
                 <p className="font-italic mb-4">
-                  Free delivery and pickup. Contact-less drop-off also available at participating locations.
+                  Free delivery and pickup. Contactless donation also available at participating locations.
                   Estimated tax savings are calculated based on average Fair Market Value.
                 </p>
                 <ul className="list-unstyled mb-4">
-                  <li className="d-flex justify-content-between py-3 border-bottom">
+                  {/* <li className="d-flex justify-content-between py-3 border-bottom">
                     <strong className="text-muted">Order Subtotal </strong>
                     <strong>${this.props.total}.00</strong>
-                  </li>
+                  </li> */}
                   {/* <li className="d-flex justify-content-between py-3 border-bottom">
                     <strong className="text-muted">
                       Total
