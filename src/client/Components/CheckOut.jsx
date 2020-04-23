@@ -47,7 +47,7 @@ class CheckOut extends Component {
               <tbody>
                 {this.props.itemStats.map((item, id) => {
                   return (
-                    <tr>
+                    <tr key={id}>
                       <th scope="row" style={{ backgroundColor: "#A9A9A9" }}>
                         <div className="p-2">
                           <img
@@ -103,9 +103,9 @@ class CheckOut extends Component {
                 <div className="ml-3 d-inline-block align-middle">
             <h5 className="mb-0">{this.props.handleBusiness}</h5>
                   <span className="text-muted font-weight-normal font-italic d-block">
-                    {this.props.newBusiness}
+                    {this.props.newBusiness} 
                   </span>
-                  {this.props.newPhone}
+                 
                 </div>
               </div>
               <div className="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
@@ -131,8 +131,8 @@ class CheckOut extends Component {
               </div>
               <div className="p-4">
                 <p className="font-italic mb-4">
-                  Free delivery pickup, estimated tax savings are calculated
-                  based on values you have entered from Fair Market Value.
+                  Free delivery and pickup. Contact-less drop-off also available at participating locations.
+                  Estimated tax savings are calculated based on average Fair Market Value.
                 </p>
                 <ul className="list-unstyled mb-4">
                   <li className="d-flex justify-content-between py-3 border-bottom">

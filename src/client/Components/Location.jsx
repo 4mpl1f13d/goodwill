@@ -13,18 +13,7 @@ export class Location extends Component {
     super(props);
     this.state = {};
   }
-  // state = {
-  //   open: false,
-  // };
-
-  // handleButtonClick = () => {
-  //   this.setState((state) => {
-  //     return {
-  //       open: !state.open,
-  //     };
-  //   };
-  //   });
-
+ 
 
   render() {
     return (
@@ -58,51 +47,24 @@ export class Location extends Component {
               <h4 style={{ color: "black" }}>Choose Your Goodwill Store</h4>
             </div>
 
-            {/* <div className="d-flex justify-content-start align-items-center my-4">
-              <h6 style={{ color: "black" }}>Zipcode:</h6>
-              <input
-                className="text-center mx-2"
-                type="text"
-                placeholder="Zipcode"
-                style={{ width: "160px" }}
-              />
-            </div> */}
-
-            {/* Dropdown selection code */}
             <Form>
               <Form.Group controlId="exampleForm.SelectCustom">
                 <Form.Label style={{ color: "black" }}>
                   Select Store:
                 </Form.Label>
-                <Form.Control as="select" custom onChange={(event)=> this.props.handleBusiness(event)} >
-                  <option>1. {this.props.phoneNumbers[0].business}</option>
-                  <option>2. {this.props.phoneNumbers[1].business}</option>
-                  <option>3. {this.props.phoneNumbers[2].business}</option>
-                  <option>4. {this.props.phoneNumbers[3].business}</option>
-                  <option>5. {this.props.phoneNumbers[4].business}</option>
+                <Form.Control as="select" custom 
+               onChange={(event)=> this.props.handleBusiness(event)}
+                >
+                  <option value= {Object.values(this.props.phoneNumbers[0])}> 1. {this.props.phoneNumbers[0].business}</option>
+                  <option value= {Object.values(this.props.phoneNumbers[1])}> 2. {this.props.phoneNumbers[1].business}</option>
+                  <option value= {Object.values(this.props.phoneNumbers[2])}> 3. {this.props.phoneNumbers[2].business}</option>
+                  <option value= {Object.values(this.props.phoneNumbers[3])}> 4. {this.props.phoneNumbers[3].business}</option>
+                  <option value= {Object.values(this.props.phoneNumbers[4])}> 5. {this.props.phoneNumbers[4].business}</option>
                 </Form.Control>
               </Form.Group>
             </Form>
 
-            <div>
-              {/* <div className="btn-group">
-                <button type="button" className="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={this.handleButtonClick}>
-                  Locations List
-                </button>
-              </div>
-
-                {this.state.open && (
-                  <div className="dropdown-menu dropdown-menu-right" style={{backgroundColor:'coral'}}>
-                    <button className="dropdown-item" type="button">Action</button>
-                    <button className="dropdown-item" type="button">Another action</button>
-                    <button className="dropdown-item" type="button">Something else here</button>
-                  </div>
-
-                  )} */}
-
-              {/* <div className="my-3">
-                <button type="button" className="btn btn-primary btn-lg btn-block">Complete Donation</button>
-              </div> */}
+            {/* <div>
 
               <div className="d-flex justify-content-center align-content-end my-5">
                 <button
@@ -110,13 +72,12 @@ export class Location extends Component {
                   type="button"
                   className="btn btn-success btn-md"
                   style={{ width: "100px" }}
-                  onClick={() => this.props.handlePhone()}
                 >
                   {" "}
                   Save
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="col-12 my-4">

@@ -102,10 +102,7 @@ class Home extends Component {
         phone: "(205) 951-9230"
         }
       ]
-    };
-
-  
-    
+    };  
 
     this.handleClick = this.handleClick.bind(this);
     this.handleMakeInput = this.handleMakeInput.bind(this);
@@ -113,11 +110,7 @@ class Home extends Component {
     this.handleConditionInput = this.handleConditionInput.bind(this);
     this.addTotal = this.addTotal.bind(this);
     this.handleDeleteClick = this.handleDeleteClick.bind(this);
-    this.handleLocationClick = this.handleLocationClick.bind(this);
     this.handleBusiness = this.handleBusiness.bind(this);
-    this.handlePhone = this.handlePhone.bind(this);
-
-
 
   }
 
@@ -167,31 +160,13 @@ class Home extends Component {
     this.setState({ newCondition: e.target.value });
   }
 
-  // handleChange(e) {
-  //   this.setState({[e.target.name]: e.target.value})
-  // }
 
   handleBusiness(e) {
     this.setState({ newBusiness: e.target.value });
     console.log(e.target.value);
+    // console.log(option.value())
   }
 
-  handlePhone(e) {
-    this.setState({ newPhone: e.target.value });
-    console.log(newPhone[`${newBusiness.e.target.value}`]);
-  }
-
-  handleLocationClick() {
-    const newLocation = {
-      
-      business: this.state.newBusiness,
-      phone: this.state.newPhone,
-
-    };
-    this.setState({ phoneNumbers: [...this.state.phoneNumbers, newLocation] }, () => {
-      console.log(this.state.phoneNumbers);
-    });
-  }
 
   handleDeleteClick = (cardId) => {
     const cards = this.state.itemStats.filter((item) => item.id !== cardId);
@@ -226,7 +201,6 @@ class Home extends Component {
             itemStats={this.state.itemStats}
             phoneNumbers={this.state.phoneNumbers}
             handleBusiness={this.handleBusiness}
-            handlePhone={this.handlePhone}
 
           />
           {/*name and zip input*/}
@@ -240,17 +214,15 @@ class Home extends Component {
             addTotal={this.addTotal}
           />
           {/* Pickup Loaction */}
-          <Location handleLocationClick={this.handleLocationClick} handleBusiness={this.handleBusiness} handlePhone={this.handlePhone} phoneNumbers={this.state.phoneNumbers} />
+          <Location handleBusiness={this.handleBusiness} phoneNumbers={this.state.phoneNumbers} />
           {/* <CheckOut />*/}
           <CheckOut
             total={this.state.total}
             itemStats={this.state.itemStats}
             onDelete={this.handleDeleteClick}
-            handlePhone={this.handlePhone}
             handleBusiness={this.handleBusiness}
             newBusiness={this.state.newBusiness}
             newPhone={this.state.newPhone}
-            handleLocationClick={this.handleLocationClick}
             phoneNumbers={this.state.phoneNumbers}
           />
         </div>
