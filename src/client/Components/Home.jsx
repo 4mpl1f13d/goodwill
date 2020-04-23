@@ -123,7 +123,7 @@ class Home extends Component {
     // Please check handleLocation to make sure it is proper. Below here
     // this.handleLocation = this.handleLocation.bind(this);
     // Above here
-    this.handleLocationClick = this.handleLocationClick.bind(this);
+    // this.handleLocationClick = this.handleLocationClick.bind(this);
     this.handleBusiness = this.handleBusiness.bind(this);
 
   }
