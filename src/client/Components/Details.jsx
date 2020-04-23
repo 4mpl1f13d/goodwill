@@ -16,14 +16,14 @@ import { Card } from "react-bootstrap";
 //   database: credentials.mysql.database
 // });
 
- // EX id = searchid AKA UID (DKVhKVCsR3JUemibU45rhq)/ item.make = hp / item.model = dv7-6b55 laptop (keywords=hp dv7-6b55 laptop&) / 
- // item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $80.8
- // galleryURL as opacity background on card (https://thumbs2.ebaystatic.com/m/mdynTPmeixZC3K09ywiaDdQ/140.jpg)
+// EX id = searchid AKA UID (DKVhKVCsR3JUemibU45rhq)/ item.make = hp / item.model = dv7-6b55 laptop (keywords=hp dv7-6b55 laptop&) /
+// item.condition = grade (3000) / item.appraisal = (TOTAL marketvalue /  TOTAL itemcount) $80.8
+// galleryURL as opacity background on card (https://thumbs2.ebaystatic.com/m/mdynTPmeixZC3K09ywiaDdQ/140.jpg)
 
 // fs.readFile(select * mysql.dona8tr.ebayfoos){
 //   let id=dona8tr.ebayfoo.searchid;
 //   let `${item.condition}`=dona8tr.ebayfoo.grade;
-// }; 
+// };
 
 export class Details extends Component {
   constructor(props) {
@@ -50,15 +50,26 @@ export class Details extends Component {
             <div>
               <h4>List Items</h4>
             </div>
-            <div
-              className="col-12">
+            <div className="col-12">
               {this.props.itemStats.map((item) => {
                 return (
-
                   <div className="d-inline-block mx-2 my-2" key={item.id}>
-                    <Card background src ="" border="success" style={{ width: "12rem" }}>
-                      <Card.Header style={{height: '35px'}}>{counter++}</Card.Header>
+                    <Card
+                      background
+                      src=""
+                      border="success"
+                      style={{ width: "12rem" }}
+                    >
+                      <Card.Header style={{ height: "35px" }}>
+                        {counter++}
+                      </Card.Header>
                       <Card.Body>
+                        <img
+                          className="bg shadow-sm rounded"
+                          src={item.image}
+                          alt=""
+                        />
+
                         <Card.Title>
                           {item.make} <br></br> {item.model}
                         </Card.Title>
@@ -66,14 +77,14 @@ export class Details extends Component {
                           <Card.Text>
                             {item.condition}
                             <div className="d-flex justify-content-center">
-                            $
-                            <input
-                              className="form-control my-2 text-center"
-                              type="text"
-                              placeholder= {item.appraisal}
-                              style={{ width: "100px", height: '20px' }}
-                              readOnly
-                            />
+                              $
+                              <input
+                                className="form-control my-2 text-center"
+                                type="text"
+                                placeholder={item.appraisal}
+                                style={{ width: "100px", height: "20px" }}
+                                readOnly
+                              />
                             </div>
                           </Card.Text>
                         </div>
@@ -82,7 +93,7 @@ export class Details extends Component {
                           style={{ width: "50px", height: "25px" }}
                           onClick={() => this.props.onDelete(item.id)}
                         >
-                          <i className="fa fa-trash"></i> 
+                          <i className="fa fa-trash"></i>
                         </button>
                       </Card.Body>
                     </Card>
@@ -90,29 +101,27 @@ export class Details extends Component {
                 );
               })}
             </div>
-
           </div>
-        </div>
-
-        <div className="row my-3" id="details">
-          <div className="col-4 col-12-mobile">
-            <div className="col-12 d-flex justify-content-between">
-              <button
-                href="#top"
-                type="button"
-                className="btn btn-outline-warning btn-md scrolly"
-                style={{ width: "100px" }}
-              >
-                + Add
-              </button>
-              <a
-                href="#about"
-                className="button scrolly"
-                onClick={() => this.props.addTotal()}
-                role="button"
-              >
-                Donate
-              </a>
+          <div className="row my-3" id="details">
+            <div className="col-4 col-12-mobile">
+              <div className="col-12 d-flex justify-content-between">
+                <button
+                  href="#top"
+                  type="button"
+                  className="btn btn-outline-warning btn-md scrolly"
+                  style={{ width: "100px" }}
+                >
+                  + Add
+                </button>
+                <a
+                  href="#about"
+                  className="button scrolly"
+                  onClick={() => this.props.addTotal()}
+                  role="button"
+                >
+                  Donate
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -36,7 +36,7 @@ export class Location extends Component {
           </header>
 
           <div
-            className="container col-md-10"
+            className="container col-md-5"
             style={{
               maxHeight: "450px",
               border: "3px solid lightgreen",

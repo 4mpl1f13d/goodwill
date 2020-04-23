@@ -1,5 +1,5 @@
 import React, { Component, ReactFragment } from "react";
-import phoneNumbers from './Location';
+import phoneNumbers from "./Location";
 import e from "express";
 
 class CheckOut extends Component {
@@ -10,7 +10,7 @@ class CheckOut extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <React.Fragment id="printMe">
         {/* Shopping cart table */}
         <div
           id="checkOut"
@@ -36,7 +36,7 @@ class CheckOut extends Component {
                   </th>
                   {/* <th scope="col" className="border-0 bg-dark">
                     <div className="py-2 text-uppercase">Quantity</div>
-                  </th> */}
+    </th>*/}
                   <th scope="col" className="border-0 bg-dark">
                     <div className="py-2 text-uppercase">Remove</div>
                   </th>
@@ -51,10 +51,9 @@ class CheckOut extends Component {
                       <th scope="row" style={{ backgroundColor: "#A9A9A9" }}>
                         <div className="p-2">
                           <img
-                            src="https://source.unsplash.com/random/50x50"
+                            src={item.image}
                             alt
-                            width={70}
-                            className="img-fluid rounded shadow-sm"
+                            className="bg rounded shadow-sm"
                             style={{ margin: "10px" }}
                           />
                           <br />
@@ -74,10 +73,13 @@ class CheckOut extends Component {
                       <td className="d-flex justify-content-center">
                         <strong>${item.appraisal}.00</strong>
                       </td>
-                      {/* <td className="align-middle">
+                      {/*<td className="align-middle">
                         <strong>{id}</strong>
-                      </td> */}
-                      <td className="align-middle">
+                  </td>*/}
+                      <td
+                        className="align-middle"
+                        style={{ paddingLeft: "2em" }}
+                      >
                         <a href="#" className="text-light">
                           <i
                             className="fa fa-trash"
@@ -101,7 +103,7 @@ class CheckOut extends Component {
 
               <div className="p-2">
                 <div className="ml-3 d-inline-block align-middle">
-            <h5 className="mb-0">{this.props.handleBusiness}</h5>
+                  <h5 className="mb-0">{this.props.handleBusiness}</h5>
                   <span className="text-muted font-weight-normal font-italic d-block">
                     {this.props.newBusiness} 
                   </span>
@@ -146,7 +148,10 @@ class CheckOut extends Component {
                     <strong>$0.00</strong>
                   </li> */}
                   <li className="d-flex justify-content-between py-3 border-bottom">
-                    <strong className="text-muted"> Estimated Value Reclaimed </strong>
+                    <strong className="text-muted">
+                      {" "}
+                      Estimated Value Reclaimed{" "}
+                    </strong>
 
                     <strong>${this.props.total}.00</strong>
                   </li>
@@ -154,6 +159,7 @@ class CheckOut extends Component {
                 <a
                   href="#"
                   className="btn btn-dark rounded-pill py-2 btn-block"
+                  onClick={() =>window.print()}
                 >
                   Print Your Donation Receipt
                 </a>
