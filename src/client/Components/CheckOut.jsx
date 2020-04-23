@@ -1,5 +1,5 @@
+// import ReactToPrint from "react-to-print";
 import React, { Component, ReactFragment } from "react";
-import ReactToPrint from "react-to-print";
 import phoneNumbers from "./Location";
 import e from "express";
 
@@ -162,7 +162,7 @@ class CheckOut extends Component {
                   className="btn btn-dark rounded-pill py-2 btn-block"
                   onClick={() =>window.print()}
                 >
-                  TEST
+                  Print Your Donation Receipt
                 </a>
               </div>
             </div>
@@ -170,20 +170,6 @@ class CheckOut extends Component {
           {/*MY CONTAINER*/}
         </div>
       </React.Fragment>
-    );
-  }
-}
-
-export class Example extends Component {
-  render() {
-    return (
-      <div>
-        <ReactToPrint
-          trigger={() => <a href="#">Print Your Donation Receipt</a>}
-          content={() => this.CheckOut}
-        />
-        <ComponentToPrint ref={el => (this.componentRef = el)} />
-      </div>
     );
   }
 }
