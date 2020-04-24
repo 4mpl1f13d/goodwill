@@ -44,7 +44,7 @@ export class Location extends Component {
             }}
           >
             <div className="d-flex justify-content-left my-4">
-              <h4 style={{ color: "black" }}>Choose Your Goodwill Store</h4>
+              <h4 style={{ color: "black" }}>Choose Your Donation Location</h4>
             </div>
 
             <Form>
