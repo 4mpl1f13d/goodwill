@@ -32,7 +32,7 @@ export class Location extends Component {
       >
         <div className="container">
           <header>
-            <h2>Pick Location</h2>
+            <h2>Choose Your Donation Location</h2>
           </header>
 
           <div
@@ -44,7 +44,7 @@ export class Location extends Component {
             }}
           >
             <div className="d-flex justify-content-left my-4">
-              <h4 style={{ color: "black" }}>Choose Your Donation Location</h4>
+              <h4 style={{ color: "black" }}>Pick Location</h4>
             </div>
 
             <Form>
