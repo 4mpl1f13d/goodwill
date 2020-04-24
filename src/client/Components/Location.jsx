@@ -43,7 +43,7 @@ export class Location extends Component {
               backgroundColor: "white",
             }}
           >
-            <div className="d-flex justify-content-left my-4">
+            <div className="d-flex justify-content-center my-4">
               <h4 style={{ color: "black" }}>Pick Location</h4>
             </div>
 
