@@ -20,7 +20,7 @@ class CheckOut extends Component {
         >
           <div className="row">
             <h1 style={{ color: "#333", padding: "2em" }}>
-              Goodwill Donation Summary
+              Donation Summary
             </h1>
           </div>
           <div className="one cover flex-container">
@@ -111,7 +111,7 @@ class CheckOut extends Component {
                 </div>
               </div>
               <div className="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
-                Instructions for GoodWill pickup team
+                Instructions for pickup team
               </div>
               <div className="p-4">
                 {/* <p className="font-italic mb-4">
