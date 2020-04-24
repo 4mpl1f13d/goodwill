@@ -11,8 +11,8 @@ class NavBar extends Component {
       <div id="header">
         <div className="top">
           {/* Logo */}
-          <div id="logo" className="flex-container">
-            <h1 className="myImage" id="title"></h1>
+          <div id="logo" className="logo">
+            <div className="myImage"></div>
           </div>
           {/* Nav */}
           <nav id="nav">

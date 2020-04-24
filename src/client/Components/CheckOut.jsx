@@ -71,7 +71,7 @@ class CheckOut extends Component {
                           </div>
                         </div>
                       </th>
-                      <td className="d-flex justify-content-center">
+                      <td className="align-middle">
                         <strong>${item.appraisal}.00</strong>
                       </td>
                       {/*<td className="align-middle">
@@ -106,9 +106,8 @@ class CheckOut extends Component {
                 <div className="ml-3 d-inline-block align-middle">
                   <h5 className="mb-0">{this.props.handleBusiness}</h5>
                   <span className="text-muted font-weight-normal font-italic d-block">
-                    {this.props.newBusiness} 
+                    {this.props.newBusiness}
                   </span>
-                 
                 </div>
               </div>
               <div className="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
@@ -134,8 +133,9 @@ class CheckOut extends Component {
               </div>
               <div className="p-4">
                 <p className="font-italic mb-4">
-                  Free delivery and pickup. Contactless donation also available at participating locations.
-                  Estimated tax savings are calculated based on average Fair Market Value.
+                  Free delivery and pickup. Contactless donation also available
+                  at participating locations. Estimated tax savings are
+                  calculated based on average Fair Market Value.
                 </p>
                 <ul className="list-unstyled mb-4">
                   {/* <li className="d-flex justify-content-between py-3 border-bottom">
@@ -160,7 +160,7 @@ class CheckOut extends Component {
                 <a
                   href="#"
                   className="btn btn-dark rounded-pill py-2 btn-block"
-                  onClick={() =>window.print()}
+                  onClick={() => window.print()}
                 >
                   Print Your Donation Receipt
                 </a>
